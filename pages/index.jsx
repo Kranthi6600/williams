@@ -9,7 +9,6 @@ import MovingText from "../components/MovingText";
 import SectionHeading from "../components/SectionHeading";
 import PortfolioSlider from "../components/Slider/PortfolioSlider";
 import TestimonialSlider from "../components/Slider/TestimonialSlider";
-
 import Spacing from "../components/Spacing";
 import VideoModal from "../components/VideoModal";
 
@@ -18,11 +17,11 @@ export default function Home() {
   const heroSocialLinks = [
     {
       name: "Youtube",
-      links: "https://www.instagram.com/williams_towing/",
+      links: "https://www.youtube.com/channel/UCdC7lmnJNh8U6KHXHscxvkw",
     },
     {
       name: "Instagram",
-      links: "https://www.youtube.com/channel/UCdC7lmnJNh8U6KHXHscxvkw",
+      links: "https://www.instagram.com/williams_towing/",
     },
   ];
 
@@ -52,34 +51,38 @@ export default function Home() {
         <title>24/7 Emergency Towing Toronto | Williams Towing - Roadside Assistance GTA</title>
         <meta
           name="description"
-          content="Expert towing services in Toronto with Williams Towing. Offering 24/7 emergency towing, roadside assistance, heavy-duty towing, and accident recovery."
+          content="Williams Towing provides fast, reliable 24/7 emergency towing across Toronto & GTA. Specializing in flatbed towing, heavy-duty towing, accident recovery & roadside assistance. Call +1-416-299-8383."
         />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://www.williamstowing.ca/"></link>
+        <link rel="canonical" href="https://www.williamstowing.ca/" />
 
-        <meta property="og:title" content="Williams Towing Company" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Williams Towing Company" />
+        <meta property="og:title" content="24/7 Emergency Towing Toronto | Williams Towing - Roadside Assistance GTA" />
         <meta
           property="og:description"
-          content="Williams Towing Company provides professional towing services in GTA. Call us now for fast and reliable assistance."
+          content="Williams Towing provides fast, reliable 24/7 emergency towing across Toronto & GTA. Flatbed towing, heavy-duty towing, accident recovery & roadside assistance."
         />
         <meta
           property="og:image"
-          content="https://www.williamstowing.ca/images/logo.png"
+          content="https://www.williamstowing.ca/images/hero_bg.jpg"
         />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:url" content="https://www.williamstowing.ca/" />
+        <meta property="og:locale" content="en_CA" />
 
-        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="williamstows" />
+        <meta name="twitter:site" content="@williamstows" />
+        <meta name="twitter:title" content="24/7 Emergency Towing Toronto | Williams Towing" />
         <meta
           name="twitter:description"
-          content="Williams Towing Company provides professional towing services in GTA. Call us now for fast and reliable assistance."
+          content="Fast, reliable 24/7 emergency towing across Toronto & GTA. Flatbed towing, heavy-duty towing, accident recovery & roadside assistance."
         />
         <meta
           name="twitter:image"
-          content="https://www.williamstowing.ca/images/logo.png"
+          content="https://www.williamstowing.ca/images/hero_bg.jpg"
         />
-
 
         <script
           type="application/ld+json"
@@ -87,15 +90,28 @@ export default function Home() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Williams Towing",
+              "@id": "https://www.williamstowing.ca/#organization",
+              "name": "Williams Towing Company",
               "url": "https://www.williamstowing.ca/",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.williamstowing.ca/images/logo.png"
+                "url": "https://www.williamstowing.ca/images/logo.png",
+                "width": 300,
+                "height": 100
               },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-416-299-8383",
+                "contactType": "customer service",
+                "availableLanguage": ["English"],
+                "hoursAvailable": "24/7"
+              },
+              "areaServed": "Greater Toronto Area",
               "sameAs": [
                 "https://www.instagram.com/williams_towing/",
-                "https://m.facebook.com/williamstows/"
+                "https://www.facebook.com/williamstows/",
+                "https://www.youtube.com/channel/UCdC7lmnJNh8U6KHXHscxvkw",
+                "https://twitter.com/williamstows"
               ]
             })
           }}

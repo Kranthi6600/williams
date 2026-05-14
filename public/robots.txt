@@ -1,9 +1,13 @@
-# *
+# Williams Towing Company - robots.txt
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /login
+Disallow: /api/
 
 # Host
 Host: https://www.williamstowing.ca
 
 # Sitemaps
 Sitemap: https://www.williamstowing.ca/sitemap.xml
+Sitemap: https://www.williamstowing.ca/sitemap-0.xml

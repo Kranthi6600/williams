@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from "react";
 import Div from "../Div";
 
-const serviceFaqLibrary = {
+export const serviceFaqLibrary = {
   "light-duty-wrecker-1ton-towing": [
     {
       question: "What vehicles qualify for light duty wrecker or 1-ton towing?",
@@ -247,7 +247,7 @@ const serviceFaqLibrary = {
   ]
 };
 
-const getServiceFaqKey = (slug = "") => {
+export const getServiceFaqKey = (slug = "") => {
   const slugLower = slug.toLowerCase();
 
   if (serviceFaqLibrary[slugLower]) {

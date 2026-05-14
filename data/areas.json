@@ -1,101 +1,371 @@
 [
   {
     "slug": "toronto-towing-services",
-    "title": "24/7 Toronto Towing | Fast & Reliable | Williams Towing",
+    "cityName": "Toronto",
+    "title": "Tow Truck Near Me Toronto | 24/7 Emergency Towing | Williams Towing",
+    "h1": "Tow Truck Near Me in Toronto — 24/7 Emergency Towing & Roadside Assistance",
     "src": "/images/wt (6).jpg",
-    "meta": "24/7 premium towing and roadside assistance with Toronto Towing Services. Expert solutions for cars, motorcycles, and trucks in Toronto",
-    "introduction": "Discover the pinnacle of towing excellence with Williams Towing in Toronto, where advanced technology meets unmatched service. Our dedicated team is at your service 24/7, ensuring rapid response to any vehicular issue across Toronto's dynamic landscape.",
-    "content": "Embark on a journey of seamless roadside assistance with Williams Towing. From critical accident recovery to precision lockout solutions, our Toronto-based team leverages cutting-edge technology to deliver efficient and effective services tailored to the urban rhythm of Toronto.",
-    "comprehensive_services": "Our Toronto services span beyond towing, offering expert accident recovery, swift lockout assistance, meticulous tire changes, and emergency fuel delivery, crafted to cater to the city's unique needs.",
-    "customer_centric_focus": "Experience personalized care at Williams Towing Toronto, where your peace of mind is our highest priority. Our solutions are designed around your individual requirements, ensuring a swift and satisfactory resolution every time.",
-    "educational_resources": "Enhance your automotive knowledge with our Toronto-focused insights. Explore tips on urban driving, seasonal vehicle maintenance, and emergency preparedness, all tailored to Toronto's unique environment."
+    "meta": "Need a tow truck near you in Toronto? Williams Towing offers 24/7 emergency towing, flatbed towing, accident recovery & roadside assistance across all Toronto neighbourhoods. Call +1-416-299-8383.",
+    "introduction": "Searching for a tow truck near you in Toronto? Williams Towing delivers fast, professional 24/7 towing and roadside assistance across every Toronto neighbourhood — from Downtown and the Beaches to the Danforth and North York. With response times averaging 20–40 minutes, our licensed operators and fully equipped fleet are always ready when you need emergency towing near me in Toronto.",
+    "content": "When your vehicle breaks down in Toronto, you need a towing company you can trust to arrive fast and handle your vehicle with care. Williams Towing has served Toronto drivers since 1968, earning a reputation for reliable, transparent, and professional roadside service. Whether you're stranded on the Gardiner Expressway, stuck in a downtown parkade, or need a flatbed tow from Yorkville, our GPS-dispatched fleet gets to you quickly. We work with all major insurance providers and offer upfront pricing with no hidden fees — because Toronto drivers deserve honest service.",
+    "comprehensive_services": "Our Toronto towing services cover every situation: emergency car towing, flatbed towing for luxury and AWD vehicles, heavy-duty towing for trucks and commercial vehicles, motorcycle towing, accident recovery, underground parking extraction, lockout service, battery boost, tire change, fuel delivery, long-distance towing, and scrap vehicle removal. Available 24 hours a day, 7 days a week, 365 days a year across all Toronto postal codes.",
+    "customer_centric_focus": "At Williams Towing Toronto, your safety and satisfaction come first. We dispatch licensed, TSSEA-compliant operators who treat your vehicle like their own. Every job includes a pre-tow inspection, clear pricing confirmation, and proof-of-delivery photos. Our dispatchers are available around the clock to answer questions, update ETAs, and coordinate directly with your insurance company or dealership.",
+    "educational_resources": "Wondering what to do when your car breaks down in Toronto? Pull safely to the right shoulder or a parking lot, activate your hazard lights, and call Williams Towing at +1-416-299-8383. Never stand between traffic and your vehicle on busy Toronto roads or expressways. Keep an emergency kit with a flashlight, reflective triangles, and a blanket in your vehicle year-round for Ontario's unpredictable weather.",
+    "faq": [
+      {
+        "question": "How fast can you get a tow truck to me in Toronto?",
+        "answer": "Williams Towing dispatches from multiple locations across Toronto, with average arrival times of 20–40 minutes. Our GPS-tracked fleet allows dispatchers to send the nearest available truck to your exact location, day or night."
+      },
+      {
+        "question": "How much does towing cost in Toronto?",
+        "answer": "Toronto towing rates typically range from $75–$200 depending on distance, vehicle type, and service required. Williams Towing provides upfront quotes before dispatching — no surprise fees or hidden charges. We comply with Ontario TSSEA rate regulations."
+      },
+      {
+        "question": "Do you offer flatbed towing for luxury and AWD vehicles in Toronto?",
+        "answer": "Yes. Our flatbed trucks keep all four wheels off the ground, making them ideal for AWD vehicles, EVs, luxury cars, and lowered vehicles. Flatbed towing is available 24/7 across all Toronto neighbourhoods including Downtown, Midtown, East End, and West End."
+      },
+      {
+        "question": "Can Williams Towing access underground parking garages in Toronto?",
+        "answer": "Absolutely. We operate low-clearance tow trucks specifically designed to access underground and multi-level parking structures throughout Toronto condos, office buildings, and shopping centres — where standard tow trucks cannot fit."
+      }
+    ],
+    "featuredServices": [
+      { "name": "Car Towing Toronto", "slug": "car-towing" },
+      { "name": "Flatbed Towing Toronto", "slug": "flatbed-towing" },
+      { "name": "Roadside Assistance Toronto", "slug": "roadside-assistance" },
+      { "name": "Accident Recovery Toronto", "slug": "accident-recovery" },
+      { "name": "Heavy Duty Towing Toronto", "slug": "heavy-duty-towing" },
+      { "name": "Motorcycle Towing Toronto", "slug": "motorcycle-towing" },
+      { "name": "Underground Towing Toronto", "slug": "underground-towing" },
+      { "name": "Long Distance Towing Toronto", "slug": "long-distance-towing" }
+    ]
   },
   {
     "slug": "scarborough-towing-services",
-    "title": "24/7 Scarborough Towing | Fast & Reliable | Williams Towing",
+    "cityName": "Scarborough",
+    "title": "Tow Truck Near Me Scarborough | 24/7 Towing | Williams Towing",
+    "h1": "Tow Truck Near Me in Scarborough — 24/7 Emergency Towing & Roadside Assistance",
     "src": "/images/wt (9).jpg",
-    "meta": "Need immediate towing in Scarborough? Our 24/7 roadside assistance covers everything from lockouts to heavy-duty towing. Fast, reliable service guaranteed.",
-    "introduction": "Embrace the reliability of Williams Towing in Scarborough, where every call is an opportunity to demonstrate our commitment to excellence. Available 24/7, we're your beacon of hope on Scarborough's roads, ready to assist with any vehicular challenge.",
-    "content": "Dive into a world where every roadside challenge in Scarborough is met with an expert solution. Whether it's heavy-duty towing or intricate lockout services, Williams Towing is your trusted ally, equipped with the expertise and technology to keep Scarborough moving.",
-    "comprehensive_services": "Our Scarborough suite includes specialized towing, emergency vehicle recovery, precise lockout solutions, and rapid fuel delivery, ensuring your safety and convenience in Scarborough's diverse driving conditions.",
-    "customer_centric_focus": "At Williams Towing Scarborough, we see beyond the service; we see the individual. Your needs drive our tailored solutions, ensuring every interaction is marked by understanding and effectiveness.",
-    "educational_resources": "Gain insights into vehicle care and safety with our Scarborough-centric advice. From coastal driving tips to seasonal maintenance, we provide the knowledge you need to navigate Scarborough's unique roads confidently."
+    "meta": "Need a tow truck near you in Scarborough? Williams Towing provides fast 24/7 emergency towing, flatbed towing, roadside assistance & accident recovery throughout Scarborough. Call +1-416-299-8383.",
+    "introduction": "Looking for a tow truck near you in Scarborough? Williams Towing is headquartered at 2671 Markham Rd in Scarborough — meaning the fastest possible response times for all Scarborough towing calls. Our 24/7 team covers Agincourt, Malvern, West Hill, Kingston Road, and every Scarborough neighbourhood with professional, licensed towing and roadside assistance.",
+    "content": "Scarborough is Williams Towing's home base, and we take pride in serving our community with the fastest, most reliable towing service in the area. From Highway 401 and Markham Road to Kingston Road and Lawrence Avenue East, our GPS-dispatched fleet knows every Scarborough route. We handle everything from simple car tows and lockouts to complex accident recovery and heavy-duty towing — with transparent pricing, licensed operators, and 24/7 availability.",
+    "comprehensive_services": "Scarborough towing services include 24/7 emergency car towing, flatbed towing, heavy-duty towing, motorcycle towing, accident and vehicle recovery, underground parking towing, lockout service, battery boost, flat tire change, emergency fuel delivery, long-distance towing, and free scrap vehicle removal. Williams Towing covers all Scarborough postal codes including M1B, M1C, M1E, M1G, M1H, M1J, M1K, M1L, M1M, M1N, M1P, M1R, M1S, M1T, M1V, M1W, M1X.",
+    "customer_centric_focus": "As Scarborough's local towing company, Williams Towing treats every customer like a neighbour. Our operators live and work in Scarborough, so they know the roads, the traffic patterns, and the fastest routes to reach you. We offer honest, upfront pricing, work directly with your insurance company, and follow up every service call to ensure your complete satisfaction.",
+    "educational_resources": "Scarborough drivers: if your vehicle breaks down on Highway 401, the 401/DVP interchange, or Markham Road, turn on your hazard lights and move to the right shoulder immediately. Call Williams Towing at +1-416-299-8383 — we're typically the closest towing company to any Scarborough breakdown. Avoid accepting service from unmarked tow trucks that approach without being called.",
+    "faq": [
+      {
+        "question": "Where is Williams Towing located in Scarborough?",
+        "answer": "Williams Towing is located at 2671 Markham Rd, Scarborough, Ontario M1X 1M4. Our Scarborough base means we are typically the fastest-responding towing company for all Scarborough breakdowns, with average arrival times under 30 minutes."
+      },
+      {
+        "question": "Do you tow vehicles on Highway 401 through Scarborough?",
+        "answer": "Yes. Williams Towing is authorized to operate on Highway 401 and all major Scarborough roadways. Our operators are trained in MTO highway towing protocols and coordinate with OPP when required for accident scenes."
+      },
+      {
+        "question": "Can you remove my scrap or junk vehicle for free in Scarborough?",
+        "answer": "Yes. Williams Towing offers free scrap and junk vehicle removal throughout Scarborough. We handle all paperwork, deregister the vehicle, and provide proof of removal — at no cost to you."
+      },
+      {
+        "question": "Do you tow motorcycles in Scarborough?",
+        "answer": "Absolutely. Our motorcycle towing service uses purpose-built wheel chocks, soft straps, and flatbed trucks to safely transport all motorcycle makes and models across Scarborough and the GTA without risk of damage."
+      }
+    ],
+    "featuredServices": [
+      { "name": "Car Towing Scarborough", "slug": "car-towing" },
+      { "name": "Flatbed Towing Scarborough", "slug": "flatbed-towing" },
+      { "name": "Roadside Assistance Scarborough", "slug": "roadside-assistance" },
+      { "name": "Accident Recovery Scarborough", "slug": "accident-recovery" },
+      { "name": "Heavy Duty Towing Scarborough", "slug": "heavy-duty-towing" },
+      { "name": "Motorcycle Towing Scarborough", "slug": "motorcycle-towing" },
+      { "name": "Scrap Vehicle Removal Scarborough", "slug": "scrap-junk-vehicle-removal" },
+      { "name": "Long Distance Towing Scarborough", "slug": "long-distance-towing" }
+    ]
   },
   {
     "slug": "north-york-towing-services",
-    "title": "24/7 North York Towing | Fast & Reliable | Williams Towing",
+    "cityName": "North York",
+    "title": "Tow Truck Near Me North York | 24/7 Towing | Williams Towing",
+    "h1": "Tow Truck Near Me in North York — 24/7 Emergency Towing & Roadside Assistance",
     "src": "/images/wt (7).jpg",
-    "meta": "North York's top towing service offers 24/7 roadside help for all vehicle types. Professional, safe, and efficient assistance when you need it most.",
-    "introduction": "Step into the realm of unmatched roadside assistance with Williams Towing in North York, where your safety and time are paramount. Our 24/7 availability ensures that North York's streets are never daunting, no matter the challenge.",
-    "content": "North York's roads demand a towing service that's as dynamic as the city itself. From timely accident response to expert mechanical troubleshooting, Williams Towing is the epitome of roadside assistance, always ready, always reliable.",
-    "comprehensive_services": "In North York, we offer a broad spectrum of services, including advanced towing solutions, immediate accident response, detailed mechanical assistance, and proactive lockout services, all designed with the community's needs in mind.",
-    "customer_centric_focus": "Your journey is personal, and so is our service at Williams Towing North York. We tailor our assistance to fit your unique circumstances, ensuring a resolution that's not just swift but also genuinely supportive.",
-    "educational_resources": "Elevate your driving knowledge with North York-specific resources from Williams Towing. From navigating local roads to understanding regional automotive care, our insights keep you informed and prepared."
+    "meta": "Need a tow truck near you in North York? Williams Towing provides 24/7 emergency towing, flatbed towing, underground parking towing & roadside assistance across North York. Call +1-416-299-8383.",
+    "introduction": "Need a tow truck near you in North York? Williams Towing delivers fast, professional 24/7 towing and roadside assistance across all North York communities including Willowdale, Don Mills, Lawrence Park, York Mills, Thornhill, and Downsview. Our licensed operators respond quickly to any North York towing or roadside emergency — day or night.",
+    "content": "North York's dense residential communities, busy commercial corridors, and major highways like the 401 and Allen Road require a towing company with local expertise and fast response. Williams Towing has been serving North York drivers for decades with reliable, professional towing services. We cover everything from underground condo towing to highway accident recovery, with transparent pricing and 24/7 availability. Our GPS-dispatched fleet ensures the nearest truck reaches you fast — whether you're on Yonge Street, the 401, or in a Yonge-Eglinton underground garage.",
+    "comprehensive_services": "North York towing services include 24/7 emergency car towing, flatbed towing for AWD and luxury vehicles, underground parking garage extraction, heavy-duty towing, motorcycle towing, accident recovery, lockout service, battery boost, tire change, fuel delivery, long-distance towing, and scrap vehicle removal. We serve all North York neighbourhoods and major routes including Yonge Street, Sheppard Avenue, Wilson Avenue, and Don Mills Road.",
+    "customer_centric_focus": "Williams Towing North York prioritizes fast response, transparent pricing, and professional care. Our operators are trained to handle the unique challenges of North York's busy streets and underground parking structures. We communicate clearly about arrival times, confirm pricing before dispatching, and handle your vehicle with the same care we'd give our own.",
+    "educational_resources": "If you break down in North York near the 401/Allen Road interchange or on Yonge Street, activate your hazard lights and pull off the road when safe. Call Williams Towing at +1-416-299-8383 for the fastest tow truck near you in North York. Voice search tip: say 'towing near me North York' or 'tow truck North York 24/7' and Williams Towing will be among the top results.",
+    "faq": [
+      {
+        "question": "Can you tow a vehicle from an underground parkade in North York?",
+        "answer": "Yes. Williams Towing operates low-clearance tow trucks designed for underground parking garages, condo parkades, and multi-level structures throughout North York. We can extract vehicles from tight spaces where standard tow trucks cannot operate."
+      },
+      {
+        "question": "How quickly can a tow truck reach me in North York?",
+        "answer": "Our typical response time in North York is 25–40 minutes. We have trucks strategically staged across the GTA, and our GPS dispatch system sends the nearest available operator to your location in real time."
+      },
+      {
+        "question": "Do you offer flatbed towing for luxury or AWD vehicles in North York?",
+        "answer": "Absolutely. Our flatbed trucks are ideal for luxury vehicles, AWD drivetrains, EVs, and lowered cars — keeping all four wheels elevated to prevent transmission or differential damage. Available 24/7 in North York."
+      },
+      {
+        "question": "Does Williams Towing cover highway towing in North York?",
+        "answer": "Yes. We respond to breakdowns on Highway 401, the Allen Expressway, and all major North York arterials. Our drivers are trained in MTO highway towing protocols and work alongside OPP at accident scenes."
+      }
+    ],
+    "featuredServices": [
+      { "name": "Car Towing North York", "slug": "car-towing" },
+      { "name": "Flatbed Towing North York", "slug": "flatbed-towing" },
+      { "name": "Underground Towing North York", "slug": "underground-towing" },
+      { "name": "Roadside Assistance North York", "slug": "roadside-assistance" },
+      { "name": "Accident Recovery North York", "slug": "accident-recovery" },
+      { "name": "Heavy Duty Towing North York", "slug": "heavy-duty-towing" },
+      { "name": "Motorcycle Towing North York", "slug": "motorcycle-towing" },
+      { "name": "Long Distance Towing North York", "slug": "long-distance-towing" }
+    ]
   },
   {
     "slug": "markham-towing-services",
-    "title": "24/7 Markham Towing | Fast & Reliable | Williams Towing",
+    "cityName": "Markham",
+    "title": "Tow Truck Near Me Markham | 24/7 Towing | Williams Towing",
+    "h1": "Tow Truck Near Me in Markham — 24/7 Emergency Towing & Roadside Assistance",
     "src": "/images/wt (10).jpg",
-    "meta": "Markham Towing Services: Your 24/7 partner for all towing needs. From emergency recovery to roadside assistance, we prioritize your safety and satisfaction.",
-    "introduction": "Williams Towing in Markham stands as a symbol of reliability and expertise, offering 24/7 roadside assistance that adapts to the evolving needs of Markham's diverse community. Whether it's day or night, we're your steadfast ally on the road.",
-    "content": "Markham's unique blend of urban and rural roads requires a towing service that's equally versatile. Williams Towing offers comprehensive roadside support, from sophisticated towing operations to detailed emergency assistance, all tailored to the Markham experience.",
-    "comprehensive_services": "Our Markham-focused services cover extensive towing, specialized roadside assistance, emergency response, and proactive support solutions, ensuring that every aspect of your journey is safeguarded.",
-    "customer_centric_focus": "In Markham, Williams Towing elevates your experience by centering our services around your needs. Personalized, attentive, and effective, we're here to ensure your roadside challenges are met with unparalleled support.",
-    "educational_resources": "Discover Markham-specific driving insights with Williams Towing, offering expert advice on local road conditions, vehicle maintenance, and emergency strategies to enhance your driving confidence."
+    "meta": "Need a tow truck near you in Markham? Williams Towing offers 24/7 emergency towing, flatbed towing, heavy equipment transport & roadside assistance throughout Markham and York Region. Call +1-416-299-8383.",
+    "introduction": "Looking for a tow truck near you in Markham? Williams Towing provides fast, professional 24/7 towing and roadside assistance across all Markham communities — including Unionville, Cornell, Milliken, Thornhill, and Buttonville. From Highway 407 to Highway 7, our licensed operators cover every Markham road with the expertise and equipment to handle any vehicle or situation.",
+    "content": "Markham's growing business corridors, industrial zones, and residential communities require a towing company that can handle everything from standard car tows to heavy-duty commercial vehicle recovery and equipment transport. Williams Towing has served Markham and York Region for decades, building a trusted reputation for fast response, professional service, and transparent pricing. Whether you need a flatbed tow on Highway 407, heavy equipment transport for a construction site, or emergency roadside assistance on Kennedy Road, our GPS-dispatched fleet is ready.",
+    "comprehensive_services": "Markham towing services include 24/7 emergency car towing, flatbed towing, heavy-duty towing, heavy equipment transport, long-distance towing, motorcycle towing, accident recovery, lockout service, battery boost, tire change, fuel delivery, and scrap vehicle removal. We serve all Markham areas and major routes including Highway 407, Highway 7, Kennedy Road, McCowan Road, and Warden Avenue.",
+    "customer_centric_focus": "Williams Towing Markham is committed to professional, punctual service for both individual drivers and commercial clients. Our operators understand Markham's unique mix of highway, commercial, and residential driving environments. We provide upfront quotes, direct insurance billing, and after-hours service coordination for business accounts requiring vehicle recovery or equipment transport.",
+    "educational_resources": "Markham drivers on Highway 407 or Highway 7: if you break down, move to the right shoulder, activate hazards, and call Williams Towing at +1-416-299-8383. We're among the closest towing companies to all Markham and York Region roads. For heavy equipment breakdown or commercial vehicle recovery, call us for priority response and specialized recovery equipment.",
+    "faq": [
+      {
+        "question": "Do you offer heavy equipment transport in Markham?",
+        "answer": "Yes. Williams Towing provides heavy equipment transport services throughout Markham and York Region, handling construction machinery, industrial equipment, and commercial vehicles with specialized lowboy trailers and rigging equipment. Available for scheduled and emergency transport."
+      },
+      {
+        "question": "Can you tow on Highway 407 in Markham?",
+        "answer": "Yes. Williams Towing is authorized to operate on Highway 407 and all major York Region roads. Our operators coordinate with 407 ETR incident management and respond to breakdowns along the highway quickly with the right equipment."
+      },
+      {
+        "question": "How long does towing take from Markham to downtown Toronto?",
+        "answer": "A long-distance tow from Markham to downtown Toronto typically takes 45–75 minutes depending on traffic. Williams Towing offers competitive flat-rate long-distance pricing for the Markham–Toronto corridor, quoted upfront before dispatch."
+      },
+      {
+        "question": "Do you offer fleet towing accounts for Markham businesses?",
+        "answer": "Yes. Williams Towing offers corporate fleet accounts for Markham businesses with priority dispatch, consolidated monthly invoicing, and dedicated account management. Ideal for commercial fleets, dealerships, and property management companies."
+      }
+    ],
+    "featuredServices": [
+      { "name": "Car Towing Markham", "slug": "car-towing" },
+      { "name": "Flatbed Towing Markham", "slug": "flatbed-towing" },
+      { "name": "Heavy Duty Towing Markham", "slug": "heavy-duty-towing" },
+      { "name": "Heavy Equipment Transport Markham", "slug": "heavy-equipment-transport" },
+      { "name": "Long Distance Towing Markham", "slug": "long-distance-towing" },
+      { "name": "Accident Recovery Markham", "slug": "accident-recovery" },
+      { "name": "Roadside Assistance Markham", "slug": "roadside-assistance" },
+      { "name": "Motorcycle Towing Markham", "slug": "motorcycle-towing" }
+    ]
   },
   {
     "slug": "etobicoke-towing-services",
-    "title": "24/7 Etobicoke Towing | Fast & Reliable | Williams Towing",
+    "cityName": "Etobicoke",
+    "title": "Tow Truck Near Me Etobicoke | 24/7 Towing | Williams Towing",
+    "h1": "Tow Truck Near Me in Etobicoke — 24/7 Emergency Towing & Roadside Assistance",
     "src": "/images/wt (6).jpg",
-    "meta": "Williams Towing Services provides around-the-clock roadside assistance and towing. Expert help for any vehicular emergency, ensuring your peace of mind.",
-    "introduction": "In Etobicoke, Williams Towing is synonymous with trust and efficiency, offering a 24/7 lifeline for any road-related emergency. Our proactive team is always ready to turn your roadside challenges into smooth resolutions.",
-    "content": "Whether you're navigating Etobicoke's bustling streets or its serene outskirts, Williams Towing is your reliable partner, offering a spectrum of services from emergency recovery to meticulous roadside assistance, all designed with your journey in mind.",
-    "comprehensive_services": "Our Etobicoke services extend to comprehensive towing, emergency response, strategic roadside assistance, and timely support, ensuring you're never alone on your road adventures.",
-    "customer_centric_focus": "Williams Towing in Etobicoke prioritizes your experience, offering customized solutions that resonate with your specific needs, ensuring each service interaction is as reassuring as it is effective.",
-    "educational_resources": "Leverage our Etobicoke-specific guidance at Williams Towing, where we share crucial tips on local driving, vehicle upkeep, and emergency readiness, empowering you for a safer journey."
+    "meta": "Need a tow truck near you in Etobicoke? Williams Towing provides 24/7 emergency towing, flatbed towing, accident recovery & roadside assistance throughout Etobicoke. Call +1-416-299-8383.",
+    "introduction": "Need a tow truck near you in Etobicoke? Williams Towing delivers fast, professional 24/7 towing and roadside assistance across all Etobicoke communities — from Rexdale and Humber Valley to Islington, Mimico, New Toronto, and Long Branch. Our licensed operators cover Highway 427, the Gardiner Expressway, and every Etobicoke street with rapid emergency towing response.",
+    "content": "Etobicoke's proximity to major highways like the 427, Gardiner, and QEW means breakdowns happen fast and often in high-traffic areas where response time is critical. Williams Towing has served Etobicoke drivers for decades with professional, fast, and transparent towing services. Our operators know Etobicoke's roads and can navigate the Gardiner, Kipling, and Royal York quickly to reach you. We offer all towing services — from simple car tows and roadside assistance to accident recovery and heavy-duty commercial towing — with honest pricing and 24/7 availability.",
+    "comprehensive_services": "Etobicoke towing services include 24/7 emergency car towing, flatbed towing, heavy-duty towing, accident recovery, motorcycle towing, lockout service, battery boost, tire change, fuel delivery, long-distance towing, and scrap vehicle removal. Coverage areas include Rexdale, Humber Valley, Islington Village, Kingsway, Mimico, New Toronto, Long Branch, and all major routes including Highway 427, Bloor Street West, Kipling Avenue, and Dundas Street West.",
+    "customer_centric_focus": "Williams Towing Etobicoke delivers honest, professional service for every call. Our operators understand the urgency of highway breakdowns and busy commuter routes, and respond with the speed and professionalism Etobicoke drivers expect. We provide upfront quotes, work directly with insurance companies, and follow up after every service call.",
+    "educational_resources": "If your car breaks down on Highway 427 or the Gardiner Expressway in Etobicoke, immediately activate hazard lights and move to the right shoulder. Do not exit your vehicle on a live lane. Call Williams Towing at +1-416-299-8383 for the fastest tow truck near you in Etobicoke. In winter, keep a blanket and emergency kit in your vehicle — Etobicoke's lakeside areas can experience severe weather quickly.",
+    "faq": [
+      {
+        "question": "Can you tow my car from the Gardiner Expressway or Highway 427 in Etobicoke?",
+        "answer": "Yes. Williams Towing operates on the Gardiner Expressway, Highway 427, and all Etobicoke arterials. Our operators are trained in MTO highway towing procedures and can respond to expressway breakdowns safely and quickly."
+      },
+      {
+        "question": "How fast can a tow truck reach me in Etobicoke?",
+        "answer": "Average response time in Etobicoke is 25–40 minutes. Our GPS dispatch system sends the nearest available truck, and we provide real-time ETA updates so you always know when help is arriving."
+      },
+      {
+        "question": "Do you offer accident towing in Etobicoke?",
+        "answer": "Yes. Williams Towing provides professional accident recovery and towing throughout Etobicoke. We coordinate with insurance companies and collision centres, and handle all vehicle types including damaged, non-running, and rolled vehicles."
+      },
+      {
+        "question": "Can you remove my junk or scrap car in Etobicoke for free?",
+        "answer": "Yes. We offer free junk and scrap vehicle removal throughout Etobicoke. Simply call us with your vehicle details, and we'll schedule a pickup, handle all paperwork, and remove the vehicle at no cost to you."
+      }
+    ],
+    "featuredServices": [
+      { "name": "Car Towing Etobicoke", "slug": "car-towing" },
+      { "name": "Flatbed Towing Etobicoke", "slug": "flatbed-towing" },
+      { "name": "Roadside Assistance Etobicoke", "slug": "roadside-assistance" },
+      { "name": "Accident Recovery Etobicoke", "slug": "accident-recovery" },
+      { "name": "Heavy Duty Towing Etobicoke", "slug": "heavy-duty-towing" },
+      { "name": "Motorcycle Towing Etobicoke", "slug": "motorcycle-towing" },
+      { "name": "Scrap Vehicle Removal Etobicoke", "slug": "scrap-junk-vehicle-removal" },
+      { "name": "Long Distance Towing Etobicoke", "slug": "long-distance-towing" }
+    ]
   },
   {
     "slug": "pickering-towing-services",
-    "title": "24/7 Pickering Towing | Fast & Reliable | Williams Towing",
+    "cityName": "Pickering",
+    "title": "Tow Truck Near Me Pickering | 24/7 Towing | Williams Towing",
+    "h1": "Tow Truck Near Me in Pickering — 24/7 Emergency Towing & Roadside Assistance",
     "src": "/images/wt (7).jpg",
-    "meta": "Reliable 24/7 towing and roadside assistance. From accidents to lockouts, our expert team is ready to assist you anytime, anywhere.",
-    "introduction": "Experience the gold standard in roadside assistance with Williams Towing in Pickering, where every second counts. Our 24/7 service ensures that you're never left stranded, providing a beacon of support in every road situation.",
-    "content": "Pickering's diverse driving conditions call for a towing service that's equally adaptable. Williams Towing delivers with a range of specialized services, from dynamic towing operations to comprehensive roadside aid, all tailored to the Pickering driver.",
-    "comprehensive_services": "In Pickering, our services are all-encompassing, including versatile towing, emergency roadside aid, detailed support services, and proactive assistance, ensuring a seamless experience for every traveler.",
-    "customer_centric_focus": "At Williams Towing Pickering, we're not just providing a service; we're offering peace of mind. Tailored to your needs, our solutions aim to deliver comfort and confidence, making every roadside encounter a positive one.",
-    "educational_resources": "Access tailored driving advice from Williams Towing in Pickering, offering essential insights on local road safety, vehicle maintenance, and emergency handling, all designed to enhance your road knowledge."
+    "meta": "Need a tow truck near you in Pickering? Williams Towing offers 24/7 emergency towing, flatbed towing, long distance towing & roadside assistance throughout Pickering and Durham Region. Call +1-416-299-8383.",
+    "introduction": "Looking for a tow truck near you in Pickering? Williams Towing provides fast, professional 24/7 towing and roadside assistance across Pickering — covering Liverpool, Brock Ridge, Bay Ridges, Rosebank, and all Pickering communities. Whether you're stranded on Highway 401, the 407, or a Pickering side street, our licensed operators respond quickly with the right equipment.",
+    "content": "Pickering's location at the gateway to Durham Region makes it a key transit corridor for commuters and commercial traffic on Highway 401. Williams Towing serves Pickering drivers and businesses with professional, fast towing and roadside assistance. From standard car tows and roadside help to long-distance towing to Toronto and beyond, our GPS-dispatched fleet covers all Pickering roads. We work with all major insurers, offer transparent pricing, and operate 24/7 — including during Ontario's harshest weather.",
+    "comprehensive_services": "Pickering towing services include 24/7 emergency car towing, flatbed towing, heavy-duty towing, long-distance towing, accident recovery, motorcycle towing, lockout service, battery boost, tire change, fuel delivery, and scrap vehicle removal. We cover all Pickering postal codes and major routes including Highway 401, Highway 407, Brock Road, Liverpool Road, and Kingston Road.",
+    "customer_centric_focus": "Williams Towing Pickering delivers prompt, professional roadside assistance to every call. Our operators understand the importance of fast response on Pickering's busy highway corridors, and we treat every customer — from individual drivers to commercial fleet operators — with honesty, care, and respect. We offer direct insurance billing and transparent, upfront pricing on every job.",
+    "educational_resources": "Pickering drivers on Highway 401: if you break down near the 401/Brock Road or 401/Liverpool Road interchanges, activate your hazards and move to the right shoulder. Call Williams Towing at +1-416-299-8383. We're frequently the closest towing company to Pickering's highway corridors. For long-distance towing from Pickering to Toronto or beyond, ask about our flat-rate pricing.",
+    "faq": [
+      {
+        "question": "Do you cover Highway 401 towing in Pickering?",
+        "answer": "Yes. Williams Towing is authorized to operate on Highway 401 through Pickering and all Durham Region corridors. We respond to highway breakdowns quickly and coordinate with OPP at accident scenes."
+      },
+      {
+        "question": "Can you tow my car from Pickering to Toronto?",
+        "answer": "Yes. We offer long-distance towing from Pickering to Toronto and all GTA destinations. Flat-rate pricing is confirmed upfront — typically $150–$250 depending on vehicle and destination — with no hidden fees."
+      },
+      {
+        "question": "How quickly can a tow truck reach me in Pickering?",
+        "answer": "Typical response time in Pickering is 25–45 minutes. Our GPS dispatch system assigns the nearest available truck, and you'll receive an ETA confirmation via call or text when your truck is dispatched."
+      },
+      {
+        "question": "Do you provide emergency towing in Pickering on holidays?",
+        "answer": "Yes. Williams Towing operates 365 days a year, including all statutory holidays. Our dispatch centre never closes, and tow trucks are available throughout Pickering and Durham Region at all hours."
+      }
+    ],
+    "featuredServices": [
+      { "name": "Car Towing Pickering", "slug": "car-towing" },
+      { "name": "Flatbed Towing Pickering", "slug": "flatbed-towing" },
+      { "name": "Long Distance Towing Pickering", "slug": "long-distance-towing" },
+      { "name": "Roadside Assistance Pickering", "slug": "roadside-assistance" },
+      { "name": "Accident Recovery Pickering", "slug": "accident-recovery" },
+      { "name": "Heavy Duty Towing Pickering", "slug": "heavy-duty-towing" },
+      { "name": "Motorcycle Towing Pickering", "slug": "motorcycle-towing" },
+      { "name": "Scrap Vehicle Removal Pickering", "slug": "scrap-junk-vehicle-removal" }
+    ]
   },
   {
     "slug": "ajax-towing-services",
-    "title": "24/7 Ajax Towing | Fast & Reliable | Williams Towing",
+    "cityName": "Ajax",
+    "title": "Tow Truck Near Me Ajax | 24/7 Towing | Williams Towing",
+    "h1": "Tow Truck Near Me in Ajax — 24/7 Emergency Towing & Roadside Assistance",
     "src": "/images/wt (9).jpg",
-    "meta": "Get fast, efficient towing and roadside support in Ajax with our 24/7 service. From jump-starts to heavy-duty towing, trust us for all your roadside needs.",
-    "introduction": "Williams Towing in Ajax redefines roadside assistance, blending speed with reliability. Our 24/7 services are a testament to our commitment to your safety, ensuring you're never alone when unexpected road challenges arise.",
-    "content": "Navigating Ajax's roads is stress-free with Williams Towing, where our comprehensive services from strategic towing to emergency assistance are designed with the Ajax community in mind, ensuring a safe and supported journey.",
-    "comprehensive_services": "Our Ajax array of services includes detailed towing, rapid emergency aid, proactive roadside assistance, and timely support, embodying our dedication to your road safety and convenience.",
-    "customer_centric_focus": "In Ajax, Williams Towing is not just a service provider but a dedicated partner. We customize our services to meet your unique road challenges, ensuring a supportive and reassuring experience.",
-    "educational_resources": "Enhance your driving acumen with Ajax-focused tips from Williams Towing, where we delve into local road nuances, vehicle care, and emergency strategies, equipping you for a safer driving experience."
+    "meta": "Need a tow truck near you in Ajax? Williams Towing offers 24/7 emergency towing, flatbed towing, accident recovery & roadside assistance throughout Ajax and Durham Region. Call +1-416-299-8383.",
+    "introduction": "Searching for a tow truck near you in Ajax? Williams Towing delivers fast, professional 24/7 towing and roadside assistance throughout Ajax — covering Carruthers Creek, Duffin Heights, Audley, and all Ajax communities. Our licensed operators respond to any Ajax towing or roadside emergency quickly, with the experience and equipment to handle every situation professionally.",
+    "content": "Ajax's growing residential and commercial communities along Highway 401 and Bayly Street require a dependable, fast towing service. Williams Towing has served Ajax and Durham Region with professional, transparent roadside assistance for decades. From car tows and battery boosts to heavy-duty vehicle recovery and long-distance transport, our fleet is equipped for any job. We offer upfront pricing, direct insurance billing, and 24/7 dispatch — because Ajax drivers deserve reliable help when they need it most.",
+    "comprehensive_services": "Ajax towing services include 24/7 emergency car towing, flatbed towing, heavy-duty towing, accident recovery, long-distance towing, motorcycle towing, lockout service, battery boost, tire change, fuel delivery, equipment towing, and scrap vehicle removal. We serve all Ajax neighbourhoods and major routes including Highway 401, Bayly Street, Salem Road, Harwood Avenue, and Westney Road.",
+    "customer_centric_focus": "Williams Towing Ajax is dedicated to fast, honest, professional service. Our operators treat every job — from a simple roadside battery boost to a complex highway accident recovery — with full professionalism. We keep you informed throughout the process, confirm pricing upfront, and coordinate directly with your insurance company or dealership when needed.",
+    "educational_resources": "Ajax drivers on Highway 401: in the event of a breakdown, move safely to the right shoulder, turn on your hazards, and stay inside your vehicle with your seatbelt on when traffic is close. Call Williams Towing at +1-416-299-8383 for the fastest tow truck near you in Ajax. Tip: save our number before you need it — breakdowns rarely happen at convenient times.",
+    "faq": [
+      {
+        "question": "How fast can a tow truck reach me in Ajax?",
+        "answer": "Williams Towing typically reaches Ajax locations within 25–45 minutes. Our GPS dispatch system identifies the closest available truck to your exact location and provides a real-time ETA when dispatched."
+      },
+      {
+        "question": "Do you cover all areas of Ajax including Duffin Heights and Carruthers Creek?",
+        "answer": "Yes. Williams Towing covers all Ajax neighbourhoods including Duffin Heights, Audley, Carruthers Creek, and all areas from Highway 401 south to Lake Ontario. No Ajax location is out of our service area."
+      },
+      {
+        "question": "Can you tow my vehicle from Ajax to Toronto?",
+        "answer": "Yes. We offer long-distance towing from Ajax to Toronto and all GTA destinations with upfront flat-rate pricing. The typical Ajax-to-Toronto tow is $150–$250 depending on vehicle type and drop-off location."
+      },
+      {
+        "question": "Do you offer equipment towing services in Ajax?",
+        "answer": "Yes. Williams Towing provides equipment towing and transport throughout Ajax and Durham Region, handling construction machinery, trailers, forklifts, and commercial vehicles with specialized transport equipment."
+      }
+    ],
+    "featuredServices": [
+      { "name": "Car Towing Ajax", "slug": "car-towing" },
+      { "name": "Flatbed Towing Ajax", "slug": "flatbed-towing" },
+      { "name": "Long Distance Towing Ajax", "slug": "long-distance-towing" },
+      { "name": "Roadside Assistance Ajax", "slug": "roadside-assistance" },
+      { "name": "Accident Recovery Ajax", "slug": "accident-recovery" },
+      { "name": "Heavy Duty Towing Ajax", "slug": "heavy-duty-towing" },
+      { "name": "Equipment Towing Ajax", "slug": "equipment-towing" },
+      { "name": "Motorcycle Towing Ajax", "slug": "motorcycle-towing" }
+    ]
   },
   {
     "slug": "whitby-towing-services",
-    "title": "24/7 Whitby Towing | Fast & Reliable | Williams Towing",
+    "cityName": "Whitby",
+    "title": "Tow Truck Near Me Whitby | 24/7 Towing | Williams Towing",
+    "h1": "Tow Truck Near Me in Whitby — 24/7 Emergency Towing & Roadside Assistance",
     "src": "/images/wt (8).jpg",
-    "meta": "Choose Williams Towing Services for dependable 24/7 towing and roadside assistance in Whitby. Your safety is our priority.",
-    "introduction": "Williams Towing in Whitby stands as your reliable roadside guardian, offering 24/7 assistance that transcends expectations. We're dedicated to providing swift, efficient service, ensuring you're supported at every turn.",
-    "content": "In Whitby, where road conditions can vary, Williams Towing is your steadfast ally, offering a wide range of services from precision towing to emergency assistance, all tailored to meet the needs of Whitby drivers.",
-    "comprehensive_services": "Our Whitby services encompass dynamic towing, detailed emergency support, versatile roadside assistance, and prompt help, ensuring a holistic approach to your roadside safety.",
-    "customer_centric_focus": "At Williams Towing Whitby, we center our services around you, offering solutions that are as responsive as they are considerate, ensuring your roadside encounters are met with expertise and empathy.",
-    "educational_resources": "Tap into Whitby-specific driving knowledge with Williams Towing, providing expert advice on navigating local roads, maintaining your vehicle, and managing roadside emergencies, all aimed at enhancing your driving confidence."
+    "meta": "Need a tow truck near you in Whitby? Williams Towing provides 24/7 emergency towing, flatbed towing, roadside assistance & accident recovery across Whitby and Durham Region. Call +1-416-299-8383.",
+    "introduction": "Looking for a tow truck near you in Whitby? Williams Towing provides reliable, professional 24/7 towing and roadside assistance across Whitby — covering Brooklin, Pringle Creek, Rolling Acres, Blue Grass Meadows, and all Whitby communities. Our licensed operators respond to any Whitby towing emergency quickly with the right equipment to safely handle your vehicle.",
+    "content": "Whitby's expanding communities and major highway access via Highway 401 and Highway 412 make it one of Durham Region's fastest-growing towing service areas. Williams Towing brings professional, fast, and transparent towing to Whitby drivers and businesses. Whether you need emergency roadside assistance on the 401, a flatbed tow for your luxury vehicle, or long-distance towing to Toronto, our GPS-dispatched fleet is ready 24 hours a day. We offer honest pricing, insurance billing coordination, and experienced operators who know Whitby's roads.",
+    "comprehensive_services": "Whitby towing services include 24/7 emergency car towing, flatbed towing, heavy-duty towing, accident recovery, long-distance towing, motorcycle towing, lockout service, battery boost, tire change, fuel delivery, and scrap vehicle removal. We cover all Whitby postal codes and major routes including Highway 401, Highway 412, Brock Street, Dundas Street, and Rossland Road.",
+    "customer_centric_focus": "Williams Towing Whitby delivers fast, honest roadside service to every customer. Our operators know Whitby's neighbourhoods and key travel routes, enabling faster response times and more efficient service. Every call receives an upfront pricing confirmation, and we coordinate directly with your insurance company and preferred repair shop to simplify your post-breakdown experience.",
+    "educational_resources": "Whitby drivers on Highway 401 or Highway 412: if your vehicle breaks down, turn on your hazard lights, move to the right shoulder, and call Williams Towing at +1-416-299-8383. We provide one of the fastest tow truck responses in Whitby and Durham Region. Winter tip: Whitby's lake-effect weather can cause sudden icy conditions — ensure your battery and tires are inspected before the cold season.",
+    "faq": [
+      {
+        "question": "Do you provide towing on Highway 401 in Whitby?",
+        "answer": "Yes. Williams Towing responds to Highway 401 breakdowns in Whitby and throughout Durham Region. Our operators follow MTO highway towing protocols and coordinate with OPP when required at accident scenes."
+      },
+      {
+        "question": "Can you tow from Whitby to Toronto?",
+        "answer": "Yes. We offer long-distance towing from Whitby to Toronto and all GTA destinations with upfront flat-rate pricing confirmed before dispatch. GPS tracking lets you monitor your vehicle throughout the journey."
+      },
+      {
+        "question": "Do you cover the newer Whitby neighbourhoods like Brooklin?",
+        "answer": "Yes. Williams Towing covers all Whitby communities including Brooklin, Pringle Creek, and all newly developed areas north of the 401. No Whitby location is outside our service area."
+      },
+      {
+        "question": "What should I do if my car won't start in Whitby in winter?",
+        "answer": "Call Williams Towing at +1-416-299-8383 for a battery boost or roadside assistance. Our operators carry surge-protected boosters compatible with all vehicle types including diesel, hybrid, and modern luxury cars. If the battery fails the test, we can source and install a replacement on-site."
+      }
+    ],
+    "featuredServices": [
+      { "name": "Car Towing Whitby", "slug": "car-towing" },
+      { "name": "Flatbed Towing Whitby", "slug": "flatbed-towing" },
+      { "name": "Long Distance Towing Whitby", "slug": "long-distance-towing" },
+      { "name": "Roadside Assistance Whitby", "slug": "roadside-assistance" },
+      { "name": "Accident Recovery Whitby", "slug": "accident-recovery" },
+      { "name": "Heavy Duty Towing Whitby", "slug": "heavy-duty-towing" },
+      { "name": "Motorcycle Towing Whitby", "slug": "motorcycle-towing" },
+      { "name": "Scrap Vehicle Removal Whitby", "slug": "scrap-junk-vehicle-removal" }
+    ]
   },
   {
     "slug": "oshawa-towing-services",
-    "title": "24/7 Oshawa Towing | Fast & Reliable | Williams Towing",
+    "cityName": "Oshawa",
+    "title": "Tow Truck Near Me Oshawa | 24/7 Heavy Duty & Car Towing | Williams Towing",
+    "h1": "Tow Truck Near Me in Oshawa — 24/7 Car & Heavy Duty Towing & Roadside Assistance",
     "src": "/images/wt (9).jpg",
-    "meta": "Count on Williams Towing Services for expert 24/7 towing and roadside support in Oshawa. Your safety is our priority.",
-    "introduction": "Unlock the essence of superior roadside support with Williams Towing in Oshawa, where our 24/7 availability ensures you're never left without help. We're committed to delivering exceptional service, tailored to Oshawa's unique roadways.",
-    "content": "Oshawa's driving demands are met with Williams Towing's unparalleled services, from expert towing to targeted roadside assistance, all designed to provide you with a seamless and secure driving experience.",
-    "comprehensive_services": "Our Oshawa-centric services offer everything from precise towing to comprehensive emergency assistance, proactive roadside support, and quick-response aid, all aimed at enhancing your road safety.",
-    "customer_centric_focus": "Williams Towing Oshawa personalizes your roadside experience, delivering solutions that not only resolve your current issue but also anticipate your future needs, ensuring a relationship built on trust and understanding.",
-    "educational_resources": "Empower your drive in Oshawa with specialized knowledge from Williams Towing, offering insights into local driving conditions, vehicle maintenance tips, and emergency handling, all curated to boost your road confidence."
+    "meta": "Need a tow truck near you in Oshawa? Williams Towing offers 24/7 emergency towing, heavy-duty towing, long distance towing & roadside assistance throughout Oshawa and Durham Region. Call +1-416-299-8383.",
+    "introduction": "Looking for a tow truck near you in Oshawa? Williams Towing delivers professional 24/7 towing and roadside assistance throughout Oshawa — covering Lakeview, McLaughlin, Centennial, Windfields, and all Oshawa communities. As a major automotive manufacturing hub, Oshawa demands heavy-duty towing expertise — and Williams Towing has the fleet and experience to meet those demands.",
+    "content": "Oshawa's identity as Ontario's automotive capital means heavy-duty towing, commercial vehicle recovery, and equipment transport are everyday needs. Williams Towing has served Oshawa drivers and businesses with expert towing services for decades. Our heavy-duty fleet can handle semi-trucks, buses, industrial equipment, and commercial vehicles alongside standard car tows and roadside assistance. We cover all major Oshawa routes — Highway 401, Simcoe Street, Taunton Road, and Harmony Road — with 24/7 GPS-dispatched response and transparent pricing.",
+    "comprehensive_services": "Oshawa towing services include 24/7 emergency car towing, flatbed towing, heavy-duty towing, heavy-duty highway towing, heavy-duty breakdown services, heavy equipment transport, long-distance towing, accident recovery, commercial vehicle recovery, motorcycle towing, lockout service, battery boost, tire change, fuel delivery, and scrap vehicle removal. We serve all Oshawa postal codes and major routes including Highway 401, Simcoe Street North/South, Taunton Road, Harmony Road, and King Street.",
+    "customer_centric_focus": "Williams Towing Oshawa understands the unique demands of this automotive community. We serve individual drivers, commercial fleet operators, and industrial businesses with equal professionalism. Our heavy-duty operators are among the most experienced in Durham Region, capable of handling complex recoveries and equipment transport. We offer priority response for commercial clients, direct insurance billing, and 24/7 dispatch.",
+    "educational_resources": "Oshawa commercial drivers on Highway 401: truck breakdowns and tire blowouts require specialized heavy-duty response. Williams Towing carries heavy-duty wreckers, air cushion recovery systems, and rotators for complex recoveries east of Toronto. Always call a specialized heavy-duty towing company — standard tow trucks cannot safely handle commercial vehicles over 10,000 lbs. Call Williams Towing at +1-416-299-8383 for expert heavy-duty response.",
+    "faq": [
+      {
+        "question": "Do you offer heavy-duty towing for commercial trucks in Oshawa?",
+        "answer": "Yes. Williams Towing operates specialized heavy-duty wreckers and recovery equipment capable of handling semi-trucks, buses, cube vans, and commercial vehicles up to 75 tons in Oshawa and throughout Durham Region."
+      },
+      {
+        "question": "Can you provide long-distance towing from Oshawa to Toronto?",
+        "answer": "Yes. We offer long-distance towing from Oshawa to Toronto, the GTA, and beyond with upfront flat-rate pricing. The Oshawa-to-Toronto corridor is one of our most frequent runs, and our operators know the best routes and timing."
+      },
+      {
+        "question": "Do you handle highway towing on Highway 401 near Oshawa?",
+        "answer": "Yes. Williams Towing responds to breakdowns on Highway 401 through Oshawa and east Durham Region. We're equipped for both standard vehicles and heavy-duty commercial trucks, and we coordinate with OPP at accident scenes."
+      },
+      {
+        "question": "Can you tow construction equipment from Oshawa job sites?",
+        "answer": "Yes. Williams Towing provides heavy equipment transport and towing from Oshawa construction sites, dealerships, and industrial yards. We use specialized lowboy trailers and rigging equipment for safe, secure transport of heavy machinery."
+      }
+    ],
+    "featuredServices": [
+      { "name": "Car Towing Oshawa", "slug": "car-towing" },
+      { "name": "Heavy Duty Towing Oshawa", "slug": "heavy-duty-towing" },
+      { "name": "Heavy Duty Highway Towing Oshawa", "slug": "heavy-duty-highway-towing" },
+      { "name": "Heavy Equipment Transport Oshawa", "slug": "heavy-equipment-transport" },
+      { "name": "Long Distance Towing Oshawa", "slug": "long-distance-towing" },
+      { "name": "Flatbed Towing Oshawa", "slug": "flatbed-towing" },
+      { "name": "Accident Recovery Oshawa", "slug": "accident-recovery" },
+      { "name": "Roadside Assistance Oshawa", "slug": "roadside-assistance" }
+    ]
   }
 ]

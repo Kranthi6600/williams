@@ -16,41 +16,32 @@ export default function Service() {
         <title>Towing Services Toronto | 24/7 Roadside Assistance GTA - Williams Towing</title>
         <meta
           name="description"
-          content="Explore our wide range of towing and recovery services including emergency roadside assistance, heavy-duty towing, vehicle recovery, and more. Trusted by the community, Williams Towing is your go-to for reliable and rapid response."
+          content="Williams Towing offers 24/7 towing services across Toronto & the GTA — car towing, flatbed towing, heavy-duty towing, accident recovery, roadside assistance & more. Call +1-416-299-8383."
         />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href={`https://www.williamstowing.ca/services/`} />
-        <meta
-          property="og:title"
-          content="Comprehensive Towing Services | Williams Towing"
-        />
+        <link rel="canonical" href="https://www.williamstowing.ca/services/" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Williams Towing Company" />
+        <meta property="og:locale" content="en_CA" />
+        <meta property="og:title" content="Towing Services Toronto | 24/7 Roadside Assistance GTA - Williams Towing" />
         <meta
           property="og:description"
-          content="Explore our wide range of towing and recovery services including emergency roadside assistance, heavy-duty towing, vehicle recovery, and more. Trusted by the community, Williams Towing is your go-to for reliable and rapid response."
+          content="Williams Towing offers 24/7 towing services across Toronto & the GTA — car towing, flatbed towing, heavy-duty towing, accident recovery, roadside assistance & more."
         />
-        <meta
-          property="og:url"
-          content="https://www.williamstowing.ca/services/"
-        />
-        <meta
-          property="og:image"
-          content="https://www.williamstowing.ca/images/service_hero_bg.jpeg"
-        />
-        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.williamstowing.ca/services/" />
+        <meta property="og:image" content="https://www.williamstowing.ca/images/service_hero_bg.jpeg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Comprehensive Towing Services | Williams Towing"
-        />
+        <meta name="twitter:site" content="@williamstows" />
+        <meta name="twitter:title" content="Towing Services Toronto | 24/7 Roadside Assistance GTA - Williams Towing" />
         <meta
           name="twitter:description"
-          content="Explore our wide range of towing and recovery services including emergency roadside assistance, heavy-duty towing, vehicle recovery, and more. Trusted by the community, Williams Towing is your go-to for reliable and rapid response."
+          content="Williams Towing offers 24/7 towing services across Toronto & the GTA — car towing, flatbed towing, heavy-duty towing, accident recovery, roadside assistance & more."
         />
-        <meta
-          name="twitter:image"
-          content="https://www.williamstowing.ca/images/service_hero_bg.jpeg"
-        />
+        <meta name="twitter:image" content="https://www.williamstowing.ca/images/service_hero_bg.jpeg" />
         <script
           type="application/ld+json"
           className="schemantra"
@@ -123,10 +114,26 @@ export default function Service() {
 }`}
         </script>
 
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "@id": "https://www.williamstowing.ca/services/",
+              "url": "https://www.williamstowing.ca/services/",
+              "name": "Towing Services Toronto | 24/7 Roadside Assistance GTA - Williams Towing",
+              "description": "Williams Towing offers 24/7 towing services across Toronto & the GTA — car towing, flatbed towing, heavy-duty towing, accident recovery, roadside assistance & more.",
+              "isPartOf": { "@type": "WebSite", "@id": "https://www.williamstowing.ca/#website" },
+              "about": { "@type": "LocalBusiness", "@id": "https://www.williamstowing.ca/#business" },
+            })
+          }}
+        />
+
       </Head>
       <Layout>
         <PageHeading
-          title="Williams Towing Services"
+          title="Towing Services Toronto — 24/7 Emergency & Roadside Assistance"
           bgSrc="/images/service_hero_bg.jpeg"
           pageLinkText={`Williams Towing | Services`}
         />

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import ServiceFaq from "../../components/ServiceFaq";
+import ServiceFaq, { serviceFaqLibrary, getServiceFaqKey } from "../../components/ServiceFaq";
 import Button from "../../components/Button";
 import Cta from "../../components/Cta";
 import Div from "../../components/Div";
@@ -49,16 +49,21 @@ export default function ServiceDetails({ service, serviceDetails }) {
     return <div>Service not found</div>;
   }
 
+  const canonicalUrl = `https://www.williamstowing.ca/services/${service.slug}/`;
+  const faqKey = getServiceFaqKey(service.slug);
+  const faqs = serviceFaqLibrary[faqKey] || serviceFaqLibrary.default;
+
   return (
     <>
       <Head>
         <title>{serviceDetails.metatitle}</title>
         <meta name="description" content={serviceDetails.metadescription} />
         <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="canonical"
-          href={`https://www.williamstowing.ca/services/${service.slug}/`}
-        />
+        <link rel="canonical" href={canonicalUrl} />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Williams Towing Company" />
+        <meta property="og:locale" content="en_CA" />
         <meta
           property="og:title"
           content={serviceDetails.metatitle || serviceDetails.title}
@@ -67,10 +72,7 @@ export default function ServiceDetails({ service, serviceDetails }) {
           property="og:description"
           content={serviceDetails.metadescription}
         />
-        <meta
-          property="og:url"
-          content={`https://www.williamstowing.ca/services/${service.slug}/`}
-        />
+        <meta property="og:url" content={canonicalUrl} />
         <meta
           property="og:image"
           content={
@@ -110,10 +112,21 @@ export default function ServiceDetails({ service, serviceDetails }) {
               "name": serviceDetails.title,
               "description": serviceDetails.metadescription,
               "serviceType": serviceDetails.title,
-              "areaServed": {
-                "@type": "City",
-                "name": "Toronto"
-              },
+              "areaServed": [
+                {"@type": "City", "name": "Toronto"},
+                {"@type": "City", "name": "Scarborough"},
+                {"@type": "City", "name": "North York"},
+                {"@type": "City", "name": "Markham"},
+                {"@type": "City", "name": "Etobicoke"},
+                {"@type": "City", "name": "Mississauga"},
+                {"@type": "City", "name": "Pickering"},
+                {"@type": "City", "name": "Ajax"},
+                {"@type": "City", "name": "Oshawa"},
+                {"@type": "City", "name": "Whitby"},
+                {"@type": "City", "name": "Richmond Hill"},
+                {"@type": "City", "name": "Vaughan"},
+                {"@type": "City", "name": "Brampton"}
+              ],
               "provider": {
                 "@type": "LocalBusiness",
                 "name": "Williams Towing",
@@ -166,7 +179,38 @@ export default function ServiceDetails({ service, serviceDetails }) {
           }}
         ></script>
 
+        {/* WebPage Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "@id": canonicalUrl,
+              "url": canonicalUrl,
+              "name": serviceDetails.metatitle,
+              "description": serviceDetails.metadescription,
+              "isPartOf": { "@type": "WebSite", "@id": "https://www.williamstowing.ca/#website" },
+              "about": { "@type": "LocalBusiness", "@id": "https://www.williamstowing.ca/#business" },
+            })
+          }}
+        ></script>
 
+        {/* FAQPage Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": faqs.map((f) => ({
+                "@type": "Question",
+                "name": f.question,
+                "acceptedAnswer": { "@type": "Answer", "text": f.answer },
+              })),
+            })
+          }}
+        ></script>
 
       </Head>
       <Layout>
@@ -245,7 +289,7 @@ export default function ServiceDetails({ service, serviceDetails }) {
             </Div>
             <Div className="col-lg-6 offset-xl-1">
               <h2 className="cs-font_50 cs-m0">
-                Explore Our Heavy Duty Towing Services
+                Explore Our Towing & Roadside Services
               </h2>
               <Spacing lg="50" md="30" />
               <Div className="row">

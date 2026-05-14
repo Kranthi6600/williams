@@ -12,13 +12,52 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Contact Us | Williams Towing - Get Help Now</title>
+        <title>Contact Williams Towing | 24/7 Towing Dispatch Toronto +1-416-299-8383</title>
         <meta
           name="description"
-          content="Reach out to Williams Towing for immediate assistance or inquiries. Our team is ready to provide fast, reliable towing and roadside support. Contact us for services, quotes, or any questions you might have."
+          content="Contact Williams Towing for 24/7 emergency towing and roadside assistance across Toronto & the GTA. Call +1-416-299-8383 — our dispatch team answers around the clock. Get a free quote today."
         />
         <link rel="icon" href="/favicon.ico" />
         <link rel="canonical" href="https://www.williamstowing.ca/contact/" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Williams Towing Company" />
+        <meta property="og:locale" content="en_CA" />
+        <meta property="og:title" content="Contact Williams Towing | 24/7 Towing Dispatch Toronto" />
+        <meta property="og:description" content="Reach Williams Towing's 24/7 dispatch team for emergency towing across Toronto & the GTA. Call +1-416-299-8383 or fill out our contact form for a free quote." />
+        <meta property="og:url" content="https://www.williamstowing.ca/contact/" />
+        <meta property="og:image" content="https://www.williamstowing.ca/images/contact_hero_bg.jpeg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@williamstows" />
+        <meta name="twitter:title" content="Contact Williams Towing | 24/7 Towing Dispatch Toronto" />
+        <meta name="twitter:description" content="Reach Williams Towing's 24/7 dispatch for emergency towing across Toronto & the GTA. Call +1-416-299-8383." />
+        <meta name="twitter:image" content="https://www.williamstowing.ca/images/contact_hero_bg.jpeg" />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ContactPage",
+              "@id": "https://www.williamstowing.ca/contact/",
+              "url": "https://www.williamstowing.ca/contact/",
+              "name": "Contact Williams Towing | 24/7 Towing Dispatch Toronto",
+              "description": "Contact Williams Towing for 24/7 emergency towing and roadside assistance across Toronto and the GTA.",
+              "isPartOf": { "@type": "WebSite", "@id": "https://www.williamstowing.ca/#website" },
+              "about": { "@type": "LocalBusiness", "@id": "https://www.williamstowing.ca/#business" },
+              "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.williamstowing.ca/" },
+                  { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.williamstowing.ca/contact/" },
+                ],
+              },
+            })
+          }}
+        />
       </Head>
 
       <Layout>

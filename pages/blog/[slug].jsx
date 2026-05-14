@@ -119,27 +119,65 @@ export default function BlogDetails({ blogDetails }) {
               "@type": "Article",
               "mainEntityOfPage": {
                 "@type": "WebPage",
-                "@id": `https://www.williamstowing.ca/blog/${blogDetails.slug}/`,
+                "@id": `https://www.williamstowing.ca/blog/${blogDetails.slug}/`
               },
               "headline": blogDetails.title,
               "description": blogDetails.description,
-              "image": blogDetails.thumbnail,
+              "image": {
+                "@type": "ImageObject",
+                "url": blogDetails.thumbnail?.startsWith("http")
+                  ? blogDetails.thumbnail
+                  : `https://www.williamstowing.ca${blogDetails.thumbnail || ""}`,
+                "width": 1200,
+                "height": 630
+              },
               "author": {
                 "@type": "Organization",
-                "name": "Williams",
-                "url": "https://www.williamstowing.ca/admin/blog/",
+                "name": "Williams Towing Company",
+                "url": "https://www.williamstowing.ca/"
               },
               "publisher": {
                 "@type": "Organization",
-                "name": "Akhil",
+                "name": "Williams Towing Company",
                 "logo": {
                   "@type": "ImageObject",
                   "url": "https://www.williamstowing.ca/images/logo.png",
-                },
+                  "width": 300,
+                  "height": 100
+                }
               },
               "datePublished": blogDetails.date,
-              "dateModified": blogDetails.updated_at,
-            }),
+              "dateModified": blogDetails.updated_at || blogDetails.date
+            })
+          }}
+        ></script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://www.williamstowing.ca/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Blog",
+                  "item": "https://www.williamstowing.ca/blog/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": blogDetails.title,
+                  "item": `https://www.williamstowing.ca/blog/${blogDetails.slug}/`
+                }
+              ]
+            })
           }}
         ></script>
 
@@ -183,8 +221,8 @@ export default function BlogDetails({ blogDetails }) {
         </Div>
         <Div className="container">
           <Cta
-            title="Let’s discuss make <br />something <i>cool</i> together"
-            btnText="Apply For Meeting"
+            title="Need Emergency Towing or <br />Roadside Assistance? <i>We’re Here 24/7</i>"
+            btnText="Call Us Now"
             btnLink="tel:+1-416-299-8383"
             bgSrc="/images/cta_bg.jpeg"
           />

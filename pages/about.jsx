@@ -31,16 +31,52 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>
-          About Williams Towing - Reliable & Trusted Towing Services
-        </title>
+        <title>About Williams Towing | Toronto's Trusted Towing Company Since 1968</title>
         <meta
           name="description"
-          content="Discover the story of Williams Towing, your trusted partner for reliable, quick, and safe towing services. Learn about our journey, our team, and our commitment to excellence in every tow."
+          content="Learn about Williams Towing — Toronto's trusted towing company since 1968. 55+ years of expert towing, 60,000+ satisfied customers, 50+ service areas across the GTA. Licensed, insured, available 24/7."
         />
         <link rel="icon" href="/favicon.ico" />
         <link rel="canonical" href="https://www.williamstowing.ca/about/" />
-        
+
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Williams Towing Company" />
+        <meta property="og:locale" content="en_CA" />
+        <meta property="og:title" content="About Williams Towing | Toronto's Trusted Towing Company Since 1968" />
+        <meta property="og:description" content="Williams Towing has served Toronto and the GTA since 1968 with professional 24/7 towing and roadside assistance. 55+ years of trusted service, 60K+ satisfied customers." />
+        <meta property="og:url" content="https://www.williamstowing.ca/about/" />
+        <meta property="og:image" content="https://www.williamstowing.ca/images/about_hero_bg.jpeg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@williamstows" />
+        <meta name="twitter:title" content="About Williams Towing | Toronto's Trusted Towing Company Since 1968" />
+        <meta name="twitter:description" content="Williams Towing has served Toronto and the GTA since 1968 with professional 24/7 towing and roadside assistance." />
+        <meta name="twitter:image" content="https://www.williamstowing.ca/images/about_hero_bg.jpeg" />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "AboutPage",
+              "@id": "https://www.williamstowing.ca/about/",
+              "url": "https://www.williamstowing.ca/about/",
+              "name": "About Williams Towing | Toronto's Trusted Towing Company Since 1968",
+              "description": "Williams Towing has served Toronto and the Greater Toronto Area since 1968 with professional, licensed 24/7 towing and roadside assistance.",
+              "isPartOf": { "@type": "WebSite", "@id": "https://www.williamstowing.ca/#website" },
+              "about": { "@type": "LocalBusiness", "@id": "https://www.williamstowing.ca/#business" },
+              "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.williamstowing.ca/" },
+                  { "@type": "ListItem", "position": 2, "name": "About Us", "item": "https://www.williamstowing.ca/about/" },
+                ],
+              },
+            })
+          }}
+        />
       </Head>
       <Layout>
         {/* Start Page Heading Section */}
