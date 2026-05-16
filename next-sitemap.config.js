@@ -12,20 +12,25 @@ module.exports = {
 
   // Core static pages with boosted priorities
   transform: async (config, path) => {
+    const p = path.replace(/\/$/, "") || "/";
     // Homepage — highest priority
-    if (path === "/") {
+    if (p === "/") {
       return { loc: path, changefreq: "daily", priority: 1.0, lastmod: new Date().toISOString() };
     }
     // Key service & location hub pages
-    if (["/services", "/our-service-area", "/contact", "/about"].includes(path)) {
+    if (["/services", "/our-service-area", "/contact", "/about"].includes(p)) {
       return { loc: path, changefreq: "weekly", priority: 0.9, lastmod: new Date().toISOString() };
     }
     // Blog & portfolio index pages
-    if (["/blog", "/portfolio", "/towing"].includes(path)) {
+    if (["/blog", "/portfolio", "/towing"].includes(p)) {
       return { loc: path, changefreq: "weekly", priority: 0.8, lastmod: new Date().toISOString() };
     }
+    // Scarborough landing page (high commercial value)
+    if (p === "/towing-near-me-scarborough") {
+      return { loc: path, changefreq: "weekly", priority: 0.85, lastmod: new Date().toISOString() };
+    }
     // Supporting pages
-    if (["/faq", "/team", "/careers"].includes(path)) {
+    if (["/faq", "/team", "/careers"].includes(p)) {
       return { loc: path, changefreq: "monthly", priority: 0.6, lastmod: new Date().toISOString() };
     }
     return { loc: path, changefreq: config.changefreq, priority: config.priority, lastmod: new Date().toISOString() };

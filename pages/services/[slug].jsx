@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React from "react";
+import Link from "next/link";
 import ServiceFaq, { serviceFaqLibrary, getServiceFaqKey } from "../../components/ServiceFaq";
 import Button from "../../components/Button";
 import Cta from "../../components/Cta";
@@ -13,6 +14,18 @@ import TestimonialSlider from "../../components/Slider/TestimonialSlider";
 import Spacing from "../../components/Spacing";
 import servicesData from "../../data/services.json";
 import supabase from "../../supabaseClient.js";
+
+const GTA_AREAS = [
+  { city: "Toronto", slug: "toronto-towing-services" },
+  { city: "Scarborough", slug: "scarborough-towing-services" },
+  { city: "North York", slug: "north-york-towing-services" },
+  { city: "Markham", slug: "markham-towing-services" },
+  { city: "Etobicoke", slug: "etobicoke-towing-services" },
+  { city: "Pickering", slug: "pickering-towing-services" },
+  { city: "Ajax", slug: "ajax-towing-services" },
+  { city: "Whitby", slug: "whitby-towing-services" },
+  { city: "Oshawa", slug: "oshawa-towing-services" },
+];
 
 export async function getServerSideProps(context) {
   const { slug } = context.params;
@@ -350,6 +363,65 @@ export default function ServiceDetails({ service, serviceDetails }) {
             </Div>
           </Div>
         </Div>
+        {/* Service Coverage by Location */}
+        <Spacing lg="120" md="60" />
+        <Div className="container">
+          <h2 className="cs-section_subtitle" style={{ marginBottom: "20px" }}>
+            {serviceDetails.title} Across Toronto &amp; GTA — Where We Serve
+          </h2>
+          <p className="cs-iconbox_subtitle" style={{ marginBottom: "30px" }}>
+            Williams Towing provides {serviceDetails.title.toLowerCase()} across every city in the Greater Toronto
+            Area. Whether you need {serviceDetails.title.toLowerCase()} near you in Toronto, Scarborough, North York,
+            Markham, Etobicoke, Pickering, Ajax, Whitby, or Oshawa — our 24/7 dispatch team is always ready to
+            respond fast with affordable, transparent pricing and no hidden fees.
+          </p>
+          <Div className="row">
+            {GTA_AREAS.map((area) => (
+              <Div key={area.slug} className="col-lg-4 col-md-6" style={{ marginBottom: "14px" }}>
+                <Link
+                  href={`/towing/${area.slug}/`}
+                  className="cs-btn cs-style2 w-100 d-block text-center"
+                  aria-label={`${serviceDetails.title} in ${area.city}`}
+                  style={{ padding: "12px 16px", fontSize: "14px" }}
+                >
+                  {serviceDetails.title} in {area.city}
+                </Link>
+              </Div>
+            ))}
+          </Div>
+          <Spacing lg="40" md="30" />
+          <Div className="row">
+            <Div className="col-lg-6">
+              <h3 className="cs-section_subtitle">
+                {serviceDetails.title} — Frequently Searched Locations
+              </h3>
+              <ul className="cs-iconbox_subtitle" style={{ paddingLeft: "20px", lineHeight: "2.2" }}>
+                {GTA_AREAS.map((area) => (
+                  <li key={area.city}>
+                    <Link href={`/towing/${area.slug}/`} style={{ color: "inherit" }}>
+                      {serviceDetails.title} {area.city}
+                    </Link>{" "}
+                    — 24/7 emergency {serviceDetails.title.toLowerCase()} near you in {area.city}
+                  </li>
+                ))}
+              </ul>
+            </Div>
+            <Div className="col-lg-5 offset-lg-1">
+              <Spacing lg="0" md="30" />
+              <h3 className="cs-section_subtitle">Towing Cost &amp; Pricing</h3>
+              <p className="cs-iconbox_subtitle">
+                Wondering how much {serviceDetails.title.toLowerCase()} costs near you? Williams Towing offers
+                competitive towing rates with upfront pricing — no surprise fees. We provide a free quote before
+                dispatching so you always know the towing charge. Call{" "}
+                <a href="tel:+1-416-299-8383" style={{ color: "inherit", fontWeight: "bold" }}>
+                  +1-416-299-8383
+                </a>{" "}
+                for an affordable towing estimate near you, available 24/7 across the GTA.
+              </p>
+            </Div>
+          </Div>
+        </Div>
+
         <Spacing lg="150" md="80" />
         <TestimonialSlider />
         <Spacing lg="145" md="80" />

@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import Head from "next/head";
-import React from "react";
+import React, { useState } from "react";
 import Div from "../components/Div";
 import Layout from "../components/Layout";
 import PageHeading from "../components/PageHeading";
@@ -9,6 +9,33 @@ import Spacing from "../components/Spacing";
 import ContactInfoWidget from "../components/Widget/ContactInfoWidget";
 
 export default function Contact() {
+  const [form, setForm] = useState({ firstName: "", lastName: "", email: "", mobile: "", message: "" });
+  const [status, setStatus] = useState(null);
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setStatus(null);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Submission failed");
+      setStatus({ type: "success", message: "Message sent! We'll be in touch shortly." });
+      setForm({ firstName: "", lastName: "", email: "", mobile: "", message: "" });
+    } catch (err) {
+      setStatus({ type: "error", message: err.message });
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <>
       <Head>
@@ -79,39 +106,50 @@ export default function Contact() {
               <Spacing lg="0" md="50" />
             </Div>
             <Div className="col-lg-6">
-              <form action="#" className="row">
+              <form onSubmit={handleSubmit} className="row">
                 <Div className="col-sm-6">
                   <label className="cs-primary_color">First Name*</label>
-                  <input type="text" className="cs-form_field" />
+                  <input type="text" name="firstName" className="cs-form_field" value={form.firstName} onChange={handleChange} required />
                   <Spacing lg="20" md="20" />
                 </Div>
                 <Div className="col-sm-6">
-                  <label className="cs-primary_color">Last Name*</label>
-                  <input type="text" className="cs-form_field" />
+                  <label className="cs-primary_color">Last Name</label>
+                  <input type="text" name="lastName" className="cs-form_field" value={form.lastName} onChange={handleChange} />
                   <Spacing lg="20" md="20" />
                 </Div>
                 <Div className="col-sm-6">
                   <label className="cs-primary_color">Email*</label>
-                  <input type="text" className="cs-form_field" />
+                  <input type="email" name="email" className="cs-form_field" value={form.email} onChange={handleChange} required />
                   <Spacing lg="20" md="20" />
                 </Div>
                 <Div className="col-sm-6">
-                  <label className="cs-primary_color">Mobile*</label>
-                  <input type="text" className="cs-form_field" />
+                  <label className="cs-primary_color">Mobile</label>
+                  <input type="tel" name="mobile" className="cs-form_field" value={form.mobile} onChange={handleChange} />
                   <Spacing lg="20" md="20" />
                 </Div>
                 <Div className="col-sm-12">
-                  <label className="cs-primary_color">Description*</label>
+                  <label className="cs-primary_color">Message*</label>
                   <textarea
+                    name="message"
                     cols="30"
                     rows="7"
                     className="cs-form_field"
+                    value={form.message}
+                    onChange={handleChange}
+                    required
                   ></textarea>
                   <Spacing lg="25" md="25" />
                 </Div>
+                {status && (
+                  <Div className="col-sm-12" style={{ marginBottom: "16px" }}>
+                    <p style={{ color: status.type === "success" ? "#4caf50" : "#f44336", margin: 0 }}>
+                      {status.message}
+                    </p>
+                  </Div>
+                )}
                 <Div className="col-sm-12">
-                  <button className="cs-btn cs-style1">
-                    <span>Send Message</span>
+                  <button type="submit" className="cs-btn cs-style1" disabled={loading}>
+                    <span>{loading ? "Sending..." : "Send Message"}</span>
                     <Icon icon="bi:arrow-right" />
                   </button>
                 </Div>

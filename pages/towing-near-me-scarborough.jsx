@@ -46,7 +46,6 @@ export default function GoogleAdsLanding() {
   return (
     <>
       <Head>
-        <meta name="robots" content="noindex, nofollow" />
         <title>Tow Truck Near Me in Scarborough | 24 Hour Towing Service | Williams Towing</title>
         <meta
           name="description"

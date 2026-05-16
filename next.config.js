@@ -201,6 +201,27 @@ const nextConfig = {
         destination: "/towing/markham-towing-services/",
         permanent: true,
       },
+      // Duplicate/alias service pages → canonical slugs
+      {
+        source: "/services/rv-towing/",
+        destination: "/services/motor-coaches-rv-towing/",
+        permanent: true,
+      },
+      {
+        source: "/services/school-bus-towing/",
+        destination: "/services/trailer-lifts-school-bus-towing/",
+        permanent: true,
+      },
+      {
+        source: "/services/breakdown-towing/",
+        destination: "/services/breakdown-services/",
+        permanent: true,
+      },
+      {
+        source: "/services/recovery-services/",
+        destination: "/services/vehicle-recovery/",
+        permanent: true,
+      },
     ];
   },
   images: {

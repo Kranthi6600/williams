@@ -1,5 +1,6 @@
 import Head from "next/head";
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { createClient } from "@supabase/supabase-js";
 import Cta from "../../components/Cta";
 import Div from "../../components/Div";
 import Layout from "../../components/Layout";
@@ -7,33 +8,27 @@ import PageHeading from "../../components/PageHeading";
 import PostStyle2 from "../../components/Post/PostStyle2";
 import Sidebar from "../../components/Sidebar/index.jsx";
 import Spacing from "../../components/Spacing";
-import supabase from "../../supabaseClient.js";
 
-export default function Blog() {
-  const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [errorMessage, setErrorMessage] = useState("");
+export async function getServerSideProps() {
+  try {
+    const supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL,
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+    );
+    const { data, error } = await supabase
+      .from("blogs")
+      .select("slug, title, date, thumbnail")
+      .order("date", { ascending: false });
 
-  useEffect(() => {
-    const fetchBlogs = async () => {
-      try {
-        const { data, error } = await supabase.from("blogs").select("*");
-        if (error) throw error;
-        const sortedBlogs = data.sort(
-          (a, b) => new Date(b.date) - new Date(a.date)
-        );
-        setPosts(sortedBlogs);
-      } catch (error) {
-        console.error("Error fetching blogs:", error);
-        setErrorMessage("Failed to load blogs. Please try again later.");
-        setPosts([]);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchBlogs();
-  }, []);
+    if (error) throw error;
+    return { props: { posts: data || [] } };
+  } catch (err) {
+    console.error("Error fetching blogs:", err);
+    return { props: { posts: [] } };
+  }
+}
 
+export default function Blog({ posts }) {
   return (
     <>
       <Head>
@@ -43,9 +38,45 @@ export default function Blog() {
           content="Expert towing tips, roadside safety guides, and industry insights from Williams Towing Toronto. Learn what to do during breakdowns, accidents, and emergencies."
         />
         <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="canonical"
-          href={`https://www.williamstowing.ca/blog/`}
+        <link rel="canonical" href="https://www.williamstowing.ca/blog/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Williams Towing Company" />
+        <meta property="og:locale" content="en_CA" />
+        <meta property="og:title" content="Towing Tips & Safety Guides | Williams Towing Blog Toronto" />
+        <meta property="og:description" content="Expert towing tips, roadside safety guides, and industry insights from Williams Towing Toronto." />
+        <meta property="og:url" content="https://www.williamstowing.ca/blog/" />
+        <meta property="og:image" content="https://www.williamstowing.ca/images/blog_hero_bg.jpeg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Towing Tips & Safety Guides | Williams Towing Blog Toronto" />
+        <meta name="twitter:description" content="Expert towing tips, roadside safety guides, and industry insights from Williams Towing Toronto." />
+        <meta name="twitter:image" content="https://www.williamstowing.ca/images/blog_hero_bg.jpeg" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Blog",
+              "@id": "https://www.williamstowing.ca/blog/",
+              "url": "https://www.williamstowing.ca/blog/",
+              "name": "Williams Towing Blog — Towing Tips & Safety Guides",
+              "description": "Expert towing tips, roadside safety guides, and industry insights from Williams Towing Toronto.",
+              "publisher": { "@type": "Organization", "@id": "https://www.williamstowing.ca/#organization" },
+              "isPartOf": { "@type": "WebSite", "@id": "https://www.williamstowing.ca/#website" },
+            })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.williamstowing.ca/" },
+                { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.williamstowing.ca/blog/" },
+              ],
+            })
+          }}
         />
       </Head>
 
@@ -59,13 +90,9 @@ export default function Blog() {
         <Div className="container">
           <Div className="row">
             <Div className="col-lg-8">
-              {loading ? (
-                <div>Loading...</div>
-              ) : errorMessage ? (
-                <div>{errorMessage}</div>
-              ) : posts.length > 0 ? (
+              {posts.length > 0 ? (
                 posts.map((item, index) => (
-                  <Div key={index}>
+                  <Div key={item.slug || index}>
                     <PostStyle2
                       thumb={item.thumbnail}
                       title={item.title}
@@ -76,7 +103,7 @@ export default function Blog() {
                   </Div>
                 ))
               ) : (
-                <div>No blog posts available</div>
+                <div>No blog posts available.</div>
               )}
               <Spacing lg="60" md="40" />
             </Div>

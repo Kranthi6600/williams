@@ -586,9 +586,6 @@ label {
   .cs-accordian_toggle {
     transform: rotate(180deg);
   }
-  .cs-accordian_head {
-    pointer-events: none;
-  }
   .cs-accordian_body {
     height: auto;
     max-height: 9999px;

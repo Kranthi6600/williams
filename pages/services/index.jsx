@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React from "react";
+import Link from "next/link";
 import Card from "../../components/Card";
 import Cta from "../../components/Cta";
 import Div from "../../components/Div";
@@ -228,6 +229,123 @@ export default function Service() {
         </Div> */}
         <Spacing lg="125" md="55" />
         <TestimonialSlider />
+
+        {/* Heavy Duty Towing by Location */}
+        <Spacing lg="150" md="80" />
+        <Div className="container">
+          <SectionHeading
+            title="Heavy Duty Towing Across Toronto & GTA"
+            subtitle="Commercial & Industrial Towing Services"
+            variant="cs-style1"
+          />
+          <Spacing lg="40" md="30" />
+          <Div className="row">
+            <Div className="col-lg-6">
+              <p className="cs-iconbox_subtitle">
+                Williams Towing specializes in heavy duty towing across the entire Greater Toronto Area.
+                Our heavy-duty fleet handles semi trucks, tractor trailers, commercial trucks, buses, RVs,
+                cargo transport, and heavy equipment — 24/7 across Toronto, Scarborough, North York,
+                Markham, Etobicoke, and beyond. From highway breakdowns to construction site recoveries,
+                we bring the right equipment and expertise for every heavy recovery.
+              </p>
+              <Spacing lg="20" md="15" />
+              <ul className="cs-iconbox_subtitle" style={{ paddingLeft: "20px", lineHeight: "2.2" }}>
+                <li>Heavy duty towing Toronto — semi truck towing, tractor trailer towing, RV towing</li>
+                <li>Heavy duty towing Scarborough — commercial towing, heavy recovery Scarborough</li>
+                <li>Heavy duty towing North York — semi towing, truck recovery, commercial towing</li>
+                <li>Heavy duty towing Markham — semi towing, heavy recovery, heavy equipment transport</li>
+                <li>Heavy duty towing Etobicoke — semi truck towing, heavy equipment towing</li>
+                <li>Heavy duty roadside assistance Toronto — on-site repairs for commercial vehicles</li>
+              </ul>
+            </Div>
+            <Div className="col-lg-5 offset-lg-1">
+              <Spacing lg="0" md="30" />
+              <h3 className="cs-section_subtitle">Towing Services by Location</h3>
+              <Spacing lg="20" md="15" />
+              <Div className="row">
+                {[
+                  { city: "Toronto", slug: "toronto-towing-services" },
+                  { city: "Scarborough", slug: "scarborough-towing-services" },
+                  { city: "North York", slug: "north-york-towing-services" },
+                  { city: "Markham", slug: "markham-towing-services" },
+                  { city: "Etobicoke", slug: "etobicoke-towing-services" },
+                  { city: "Pickering", slug: "pickering-towing-services" },
+                  { city: "Ajax", slug: "ajax-towing-services" },
+                  { city: "Whitby", slug: "whitby-towing-services" },
+                  { city: "Oshawa", slug: "oshawa-towing-services" },
+                ].map((area) => (
+                  <Div key={area.slug} className="col-6" style={{ marginBottom: "12px" }}>
+                    <Link
+                      href={`/towing/${area.slug}/`}
+                      style={{ color: "inherit", textDecoration: "underline", fontSize: "14px" }}
+                    >
+                      Towing in {area.city}
+                    </Link>
+                  </Div>
+                ))}
+              </Div>
+            </Div>
+          </Div>
+        </Div>
+
+        {/* All Services Directory — complete crawlable list */}
+        <Spacing lg="150" md="80" />
+        <Div className="container">
+          <SectionHeading
+            title="Complete Towing & Roadside Services Directory"
+            subtitle="All Services — Toronto & GTA"
+            variant="cs-style1"
+          />
+          <Spacing lg="40" md="30" />
+          <p className="cs-iconbox_subtitle" style={{ marginBottom: "30px" }}>
+            Williams Towing offers a full range of towing, recovery, and roadside assistance services across Toronto and the Greater Toronto Area.
+            Browse our complete service directory below and click any service for details, pricing, and coverage areas.
+          </p>
+          <Div className="row">
+            {[
+              { title: "Car Towing", slug: "car-towing" },
+              { title: "Flatbed Towing", slug: "flatbed-towing" },
+              { title: "Heavy Duty Towing", slug: "heavy-duty-towing" },
+              { title: "Roadside Assistance", slug: "roadside-assistance" },
+              { title: "Vehicle Recovery", slug: "vehicle-recovery" },
+              { title: "Accident Recovery", slug: "accident-recovery" },
+              { title: "Accident Towing", slug: "accident-towing" },
+              { title: "Specialized Towing", slug: "specialized-towing" },
+              { title: "Light Duty Wrecker & 1-Ton Towing", slug: "light-duty-wrecker-1ton-towing" },
+              { title: "Underground Towing", slug: "underground-towing" },
+              { title: "Motorcycle Towing", slug: "motorcycle-towing" },
+              { title: "Long Distance Towing", slug: "long-distance-towing" },
+              { title: "Equipment Towing", slug: "equipment-towing" },
+              { title: "Heavy Equipment Transport", slug: "heavy-equipment-transport" },
+              { title: "Scrap & Junk Vehicle Removal", slug: "scrap-junk-vehicle-removal" },
+              { title: "Jump Start / Boost Service", slug: "jump-start-boost-service" },
+              { title: "Gas Delivery", slug: "gas-delivery" },
+              { title: "Vehicle Lockout Service", slug: "vehicle-lockout-service" },
+              { title: "Tire Change Service", slug: "light-duty-vehicles-tire-change" },
+              { title: "Breakdown Services", slug: "breakdown-services" },
+              { title: "Heavy Duty Breakdown Services", slug: "heavy-duty-breakdown-services" },
+              { title: "Heavy Duty Highway Towing", slug: "heavy-duty-highway-towing" },
+              { title: "Heavy Duty Winching & Recovery", slug: "heavy-duty-winching-recovery-services" },
+              { title: "Motor Coaches & RV Towing", slug: "motor-coaches-rv-towing" },
+              { title: "Trailer Lifts & School Bus Towing", slug: "trailer-lifts-school-bus-towing" },
+              { title: "Truck Decking & Un-decking", slug: "truck-decking-un-decking-service" },
+              { title: "Cargo Services", slug: "cargo-services" },
+              { title: "Fleet Services", slug: "fleet-services" },
+              { title: "Corporate Services", slug: "corporate-services" },
+            ].map((service) => (
+              <Div key={service.slug} className="col-lg-4 col-md-6" style={{ marginBottom: "14px" }}>
+                <Link
+                  href={`/services/${service.slug}/`}
+                  className="cs-btn cs-style2 w-100 d-block text-center"
+                  style={{ padding: "12px 16px", fontSize: "14px" }}
+                >
+                  {service.title}
+                </Link>
+              </Div>
+            ))}
+          </Div>
+        </Div>
+
         <Spacing lg="150" md="80" />
         <Div className="container">
           <Cta
