@@ -9,7 +9,11 @@
       "Bash(node -e \"const data = require\\('./data/areas.json'\\); console.log\\('Valid JSON, cities:', data.map\\(c => c.cityName\\).join\\(', '\\)\\)\")",
       "Bash(node -e ' *)",
       "Bash(node --check scripts/update-service-content.js)",
-      "Bash(node scripts/update-service-content.js)"
+      "Bash(node scripts/update-service-content.js)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(node scripts/update-service-content-2.js)"
     ]
   }
 }
