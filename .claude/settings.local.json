@@ -5,7 +5,11 @@
       "WebFetch(domain:www.williamstowing.ca)",
       "Bash(node -e \"const data = require\\('./data/areas.json'\\); data.forEach\\(a => console.log\\(a.slug, 'faqs:', a.faq?.length || 0\\)\\);\")",
       "Bash(node -e \"const data = require\\('./data/areas.json'\\); const t = data[0]; console.log\\('title:', t.title\\); console.log\\('h1:', t.h1\\); console.log\\('h2:', t.h2\\);\")",
-      "Bash(node -e \"const d = require\\('./data/services.json'\\); d.forEach\\(s => console.log\\(s.slug, '|', s.title || s.name\\)\\)\")"
+      "Bash(node -e \"const d = require\\('./data/services.json'\\); d.forEach\\(s => console.log\\(s.slug, '|', s.title || s.name\\)\\)\")",
+      "Bash(node -e \"const data = require\\('./data/areas.json'\\); console.log\\('Valid JSON, cities:', data.map\\(c => c.cityName\\).join\\(', '\\)\\)\")",
+      "Bash(node -e ' *)",
+      "Bash(node --check scripts/update-service-content.js)",
+      "Bash(node scripts/update-service-content.js)"
     ]
   }
 }
