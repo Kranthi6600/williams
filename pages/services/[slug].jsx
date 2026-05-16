@@ -33,6 +33,11 @@ export async function getServerSideProps(context) {
   // Find service details from static JSON for fallback
   const service = servicesData.find((s) => s.slug === slug);
 
+  if (!supabase) {
+    console.error("Supabase client is not initialized — check environment variables.");
+    return { notFound: true };
+  }
+
   try {
     const { data: serviceDetails, error } = await supabase
       .from("services")
