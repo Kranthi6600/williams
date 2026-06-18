@@ -134,7 +134,7 @@ export default function Service() {
       </Head>
       <Layout>
         <PageHeading
-          title="Towing Services Toronto — 24/7 Emergency & Roadside Assistance"
+          title="Towing Services Toronto & Scarborough"
           bgSrc="/images/service_hero_bg.jpeg"
           pageLinkText={`Williams Towing | Services`}
         />

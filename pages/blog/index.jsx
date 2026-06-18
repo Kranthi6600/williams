@@ -10,7 +10,7 @@ import PostStyle2 from "../../components/Post/PostStyle2";
 import Sidebar from "../../components/Sidebar/index.jsx";
 import Spacing from "../../components/Spacing";
 
-const PAGE_SIZE = 10;
+const PAGE_SIZE = 5;
 
 export async function getServerSideProps({ query }) {
   try {

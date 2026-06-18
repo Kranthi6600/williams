@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Div from "../Div";
 import AuthorWidget from "../Widget/AuthorWidget";
+import MenuWidget from "../Widget/MenuWidget";
 import RecentPost from "../Widget/RecentPost";
 import SearchWidget from "../Widget/SearchWidget";
 import supabase from "../../supabaseClient";
@@ -56,6 +57,18 @@ export default function Sidebar() {
         ) : (
           <RecentPost title="Recent Posts" data={recentPostData} />
         )}
+      </Div>
+      <Div className="cs-sidebar_item">
+        <MenuWidget
+          menuHeading="Towing Services"
+          menuItems={[
+            { title: "Car Towing", href: "/services/car-towing" },
+            { title: "Heavy Duty Towing", href: "/services/heavy-duty-towing" },
+            { title: "Flatbed Towing", href: "/services/flatbed-towing" },
+            { title: "Roadside Assistance", href: "/services/roadside-assistance" },
+            { title: "Accident Recovery", href: "/services/accident-recovery" },
+          ]}
+        />
       </Div>
     </>
   );

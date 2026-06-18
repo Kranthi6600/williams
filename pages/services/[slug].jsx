@@ -35,6 +35,20 @@ export async function getServerSideProps(context) {
 
   if (!supabase) {
     console.error("Supabase client is not initialized — check environment variables.");
+    // Fallback to static JSON data
+    if (service) {
+      return {
+        props: {
+          service,
+          serviceDetails: {
+            ...service,
+            description: `${service.description1 || ''} ${service.description2 || ''}`,
+            benefit: service.benefits || '',
+            updated_at: new Date().toISOString(),
+          },
+        },
+      };
+    }
     return { notFound: true };
   }
 
@@ -50,6 +64,20 @@ export async function getServerSideProps(context) {
         "Error fetching service details or service not found:",
         error
       );
+      // Fallback to static JSON if Supabase fails
+      if (service) {
+        return {
+          props: {
+            service,
+            serviceDetails: {
+              ...service,
+              description: `${service.description1 || ''} ${service.description2 || ''}`,
+              benefit: service.benefits || '',
+              updated_at: new Date().toISOString(),
+            },
+          },
+        };
+      }
       return { notFound: true };
     }
 
@@ -58,6 +86,20 @@ export async function getServerSideProps(context) {
     };
   } catch (err) {
     console.error("Error in getServerSideProps:", err);
+    // Fallback to static JSON on error
+    if (service) {
+      return {
+        props: {
+          service,
+          serviceDetails: {
+            ...service,
+            description: `${service.description1 || ''} ${service.description2 || ''}`,
+            benefit: service.benefits || '',
+            updated_at: new Date().toISOString(),
+          },
+        },
+      };
+    }
     return { notFound: true };
   }
 }
