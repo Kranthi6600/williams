@@ -236,6 +236,16 @@ const TowingService = ({ areaItem }) => {
           </Div>
         </Div>
 
+        {/* Rich Body Content */}
+        {areaItem.body && (
+          <>
+            <Spacing lg="80" md="50" />
+            <Div className="container">
+              <div dangerouslySetInnerHTML={{ __html: areaItem.body }} />
+            </Div>
+          </>
+        )}
+
         <Spacing lg="80" md="50" />
 
         {/* Section 2: Services Grid — internal linking hub */}
@@ -255,12 +265,38 @@ const TowingService = ({ areaItem }) => {
               { name: "Long Distance Towing", slug: "long-distance-towing" },
               { name: "Scrap Vehicle Removal", slug: "scrap-junk-vehicle-removal" },
             ]).map((service, i) => (
-              <Div key={i} className="col-lg-3 col-sm-6" style={{ marginBottom: "16px" }}>
+              <Div key={i} className="col-lg-4 col-sm-6" style={{ marginBottom: "16px" }}>
                 <Link
                   href={`/services/${service.slug}/`}
-                  className="cs-btn cs-style2 w-100 d-block text-center"
+                  className="w-100 d-block text-center"
                   aria-label={`${service.name} in ${city}`}
-                  style={{ padding: "12px 16px", fontSize: "14px" }}
+                  style={{
+                    padding: "24px 16px",
+                    fontSize: "14px",
+                    fontWeight: 600,
+                    color: "#FEFEFE",
+                    background: "#181818",
+                    border: "1px solid #4D4D4D",
+                    borderRadius: "8px",
+                    minHeight: "80px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    transition: "all 0.3s ease",
+                    textDecoration: "none",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = "#242424";
+                    e.currentTarget.style.borderColor = "#666666";
+                    e.currentTarget.style.transform = "translateY(-4px)";
+                    e.currentTarget.style.boxShadow = "0 12px 40px rgba(255,74,23,0.15)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = "#181818";
+                    e.currentTarget.style.borderColor = "#4D4D4D";
+                    e.currentTarget.style.transform = "translateY(0)";
+                    e.currentTarget.style.boxShadow = "none";
+                  }}
                 >
                   {service.name}
                 </Link>
@@ -271,28 +307,31 @@ const TowingService = ({ areaItem }) => {
 
         <Spacing lg="80" md="50" />
 
-        {/* Section 3: Comprehensive Services + Customer Focus */}
-        <Div className="container">
-          <Div className="row align-items-start">
-            <Div className="col-lg-6">
-              <h2 className="cs-section_subtitle">Comprehensive Towing Services in {city}</h2>
-              <p className="cs-iconbox_subtitle">{areaItem.comprehensive_services}</p>
-              <Spacing lg="40" md="30" />
-              <h3 className="cs-section_subtitle">Customer-First Approach</h3>
-              <p className="cs-iconbox_subtitle">{areaItem.customer_centric_focus}</p>
+        {/* Section 3: Comprehensive Services + Customer Focus (shown only when no body content) */}
+        {!areaItem.body && (
+          <>
+            <Div className="container">
+              <Div className="row align-items-start">
+                <Div className="col-lg-6">
+                  <h2 className="cs-section_subtitle">Comprehensive Towing Services in {city}</h2>
+                  <p className="cs-iconbox_subtitle">{areaItem.comprehensive_services}</p>
+                  <Spacing lg="40" md="30" />
+                  <h3 className="cs-section_subtitle">Customer-First Approach</h3>
+                  <p className="cs-iconbox_subtitle">{areaItem.customer_centric_focus}</p>
+                </Div>
+                <Div className="col-lg-5 offset-lg-1">
+                  <Spacing lg="0" md="40" />
+                  <h3 className="cs-section_subtitle">Why Choose Williams Towing in {city}?</h3>
+                  <p className="cs-iconbox_subtitle">{areaItem.content}</p>
+                  <Spacing lg="30" md="20" />
+                  <h3 className="cs-section_subtitle">Towing Tips & Safety Resources</h3>
+                  <p className="cs-iconbox_subtitle">{areaItem.educational_resources}</p>
+                </Div>
+              </Div>
             </Div>
-            <Div className="col-lg-5 offset-lg-1">
-              <Spacing lg="0" md="40" />
-              <h3 className="cs-section_subtitle">Why Choose Williams Towing in {city}?</h3>
-              <p className="cs-iconbox_subtitle">{areaItem.content}</p>
-              <Spacing lg="30" md="20" />
-              <h3 className="cs-section_subtitle">Towing Tips & Safety Resources</h3>
-              <p className="cs-iconbox_subtitle">{areaItem.educational_resources}</p>
-            </Div>
-          </Div>
-        </Div>
-
-        <Spacing lg="80" md="50" />
+            <Spacing lg="80" md="50" />
+          </>
+        )}
 
         {/* Section 4: Additional Services Internal Links */}
         <Div className="container">
@@ -366,44 +405,48 @@ const TowingService = ({ areaItem }) => {
           </Div>
         )}
 
-        <Spacing lg="80" md="50" />
-
-        {/* Section 6: Other Service Areas — internal links */}
-        <Div className="container">
-          <h2 className="cs-section_subtitle" style={{ marginBottom: "20px" }}>
-            Williams Towing Serves All GTA Cities Near {city}
-          </h2>
-          <p className="cs-iconbox_subtitle" style={{ marginBottom: "24px" }}>
-            In addition to {city}, Williams Towing provides 24/7 towing and roadside assistance across the entire Greater Toronto Area.
-          </p>
-          <Div className="row">
-            {[
-              { city: "Toronto", slug: "toronto-towing-services" },
-              { city: "Scarborough", slug: "scarborough-towing-services" },
-              { city: "North York", slug: "north-york-towing-services" },
-              { city: "Markham", slug: "markham-towing-services" },
-              { city: "Etobicoke", slug: "etobicoke-towing-services" },
-              { city: "Pickering", slug: "pickering-towing-services" },
-              { city: "Ajax", slug: "ajax-towing-services" },
-              { city: "Whitby", slug: "whitby-towing-services" },
-              { city: "Oshawa", slug: "oshawa-towing-services" },
-            ]
-              .filter((loc) => loc.slug !== areaItem.slug)
-              .map((loc, i) => (
-                <Div key={i} className="col-lg-3 col-sm-4 col-6" style={{ marginBottom: "12px" }}>
-                  <Link
-                    href={`/towing/${loc.slug}/`}
-                    aria-label={`Towing services in ${loc.city}`}
-                    style={{ color: "inherit", textDecoration: "underline" }}
-                  >
-                    Towing in {loc.city}
-                  </Link>
-                </Div>
-              ))}
-          </Div>
-        </Div>
-
         <Spacing lg="100" md="60" />
+
+        {!areaItem.body && (
+          <>
+            <Spacing lg="80" md="50" />
+            {/* Section 6: Other Service Areas — internal links */}
+            <Div className="container">
+              <h2 className="cs-section_subtitle" style={{ marginBottom: "20px" }}>
+                Williams Towing Serves All GTA Cities Near {city}
+              </h2>
+              <p className="cs-iconbox_subtitle" style={{ marginBottom: "24px" }}>
+                In addition to {city}, Williams Towing provides 24/7 towing and roadside assistance across the entire Greater Toronto Area.
+              </p>
+              <Div className="row">
+                {[
+                  { city: "Toronto", slug: "toronto-towing-services" },
+                  { city: "Scarborough", slug: "scarborough-towing-services" },
+                  { city: "North York", slug: "north-york-towing-services" },
+                  { city: "Markham", slug: "markham-towing-services" },
+                  { city: "Etobicoke", slug: "etobicoke-towing-services" },
+                  { city: "Pickering", slug: "pickering-towing-services" },
+                  { city: "Ajax", slug: "ajax-towing-services" },
+                  { city: "Whitby", slug: "whitby-towing-services" },
+                  { city: "Oshawa", slug: "oshawa-towing-services" },
+                ]
+                  .filter((loc) => loc.slug !== areaItem.slug)
+                  .map((loc, i) => (
+                    <Div key={i} className="col-lg-3 col-sm-4 col-6" style={{ marginBottom: "12px" }}>
+                      <Link
+                        href={`/towing/${loc.slug}/`}
+                        aria-label={`Towing services in ${loc.city}`}
+                        style={{ color: "inherit", textDecoration: "underline" }}
+                      >
+                        Towing in {loc.city}
+                      </Link>
+                    </Div>
+                  ))}
+              </Div>
+            </Div>
+            <Spacing lg="100" md="60" />
+          </>
+        )}
 
         {/* CTA */}
         <Div className="container">

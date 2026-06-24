@@ -12,9 +12,9 @@ export default function MenuWidget({ menuItems, menuHeading, variant }) {
         {menuItems.map((item, index) => (
           <li key={index} style={{ marginBottom: '12px' }}>
             {item.href ? (
-              <h5 style={{ margin: '0' }}><Link href={item.href} className="cs-recent_post_title cs-white_color">{item.title}</Link></h5>
+              <Link href={item.href} className="cs-recent_post_title cs-white_color">{item.title}</Link>
             ) : (
-              <h5 style={{ margin: '0' }}><span className="cs-recent_post_title cs-white_color">{item.title}</span></h5>
+              <span className="cs-recent_post_title cs-white_color">{item.title}</span>
             )}
           </li>
         ))}
