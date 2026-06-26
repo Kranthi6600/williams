@@ -46,7 +46,7 @@
         "description": "Serving <strong>Towing Scarborough</strong>, Downtown Toronto, North York, Etobicoke, Markham, Richmond Hill, Brampton, and beyond."
       },
       {
-        "icon": "fluent:shield-check-24-regular",
+        "icon": "fluent:shield-checkmark-24-regular",
         "title": "Certified Operators",
         "description": "Wreckmaster certified team trained in latest towing techniques. Your vehicle's safety is our priority."
       },
@@ -91,7 +91,7 @@
       },
       {
         "feature": {
-          "icon": "fluent:shield-check-24-regular",
+          "icon": "fluent:shield-checkmark-24-regular",
           "title": "Certified Operators",
           "description": "Wreckmaster certified team trained in latest towing techniques. Your vehicle's safety is our priority."
         },

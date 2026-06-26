@@ -1,15 +1,14 @@
 import Head from "next/head";
 import React from "react";
 import Link from "next/link";
+import { Icon } from "@iconify/react";
 import ServiceFaq, { serviceFaqLibrary, getServiceFaqKey } from "../../components/ServiceFaq";
 import Button from "../../components/Button";
 import Cta from "../../components/Cta";
 import Div from "../../components/Div";
-import IconBox from "../../components/IconBox";
 import Layout from "../../components/Layout";
 import PageHeading from "../../components/PageHeading";
 import SafeHtmlContent from "../../components/SafeHtmlContent.js";
-import SectionHeading from "../../components/SectionHeading";
 import TestimonialSlider from "../../components/Slider/TestimonialSlider";
 import Spacing from "../../components/Spacing";
 import servicesData from "../../data/services.json";
@@ -267,146 +266,197 @@ export default function ServiceDetails({ service, serviceDetails }) {
           bgSrc="/images/service_hero_bg.jpeg"
           pageLinkText={`Williams Towing | Services | ${service.slug}`}
         />
+        {/* Hero Section */}
         <Spacing lg="145" md="80" />
         <Div className="container">
-          <Div className="text-uppercase">
-            <SectionHeading
-              title="Service Details"
-              subtitle="Williams Towing"
-              variant="cs-style1 text-center"
-            />
-          </Div>
-          <Spacing lg="90" md="45" />
-          <Div className="row">
-            <Div className="col-lg-4">
-              <IconBox
-                icon="/images/icons/service_icon_1.svg"
-                title="Call To Action"
-                subtitle={service.wcu}
-              />
-              <Spacing lg="30" md="30" />
-            </Div>
-            <Div className="col-lg-4">
-              <IconBox
-                icon="/images/icons/service_icon_3.svg"
-                title="Why Choose Us"
-                subtitle={service.cta}
-              />
-              <Spacing lg="30" md="30" />
-            </Div>
-            <Div className="col-lg-4">
-              <IconBox
-                icon="/images/icons/service_icon_2.svg"
-                title="24/7 Support & Care"
-                subtitle={service.sac}
-              />
-              <Spacing lg="30" md="30" />
-            </Div>
-          </Div>
-        </Div>
-        <Spacing lg="80" md="50" />
-        <Div className="container">
-          <h2 className="cs-section_subtitle">About {serviceDetails.title}</h2>
-          <Div className="cs-iconbox_subtitle">
-            <SafeHtmlContent html={serviceDetails.introduction} />
-          </Div>
-          <br /> <br />
-          <h2 className="cs-section_subtitle">Service Details</h2>
-          <Div className="cs-iconbox_subtitle">
-            <SafeHtmlContent html={serviceDetails.description} />
-          </Div>
-          <br /> <br />
-          <h2 className="cs-section_subtitle">Benefits of Our {serviceDetails.title} Service</h2>
-          <Div className="cs-iconbox_subtitle">
-            <SafeHtmlContent html={serviceDetails.benefit} />
-          </Div>
-          <br /> <br />
-        </Div>
-        <Div className="container">
           <Div className="row align-items-center">
-            <Div className="col-xl-5 col-lg-6">
+            <Div className="col-lg-6">
               <Div className="cs-radius_15 cs-shine_hover_1">
                 <img
-                  src={serviceDetails.thumbnail}
+                  src={serviceDetails.thumbnail || service.imageURL}
                   alt={`Williams Towing - ${serviceDetails.title}`}
                   className="cs-radius_15 w-100"
                   loading="lazy"
+                  style={{ minHeight: "400px", objectFit: "cover" }}
                 />
               </Div>
               <Spacing lg="0" md="40" />
             </Div>
-            <Div className="col-lg-6 offset-xl-1">
-              <h2 className="cs-font_50 cs-m0">
-                Explore Our Towing & Roadside Services
+            <Div className="col-lg-5 offset-lg-1">
+              <span className="cs-accent_color cs-font_16 cs-medium" style={{ letterSpacing: "2px", textTransform: "uppercase" }}>
+                Professional Towing Services
+              </span>
+              <Spacing lg="15" md="10" />
+              <h2 className="cs-section_subtitle cs-m0" style={{ fontSize: "42px", lineHeight: "1.2" }}>
+                {serviceDetails.title}
               </h2>
-              <Spacing lg="50" md="30" />
-              <Div className="row">
-                <Div className="col-lg-6">
-                  <Button
-                    btnLink="/services/heavy-duty-breakdown-services"
-                    btnText="Heavy Duty Breakdown Services"
-                    variant="cs-type2"
-                  />
-                  <Spacing lg="20" md="10" />
-                  <Button
-                    btnLink="/services/specialized-towing"
-                    btnText="Specialized Towing Services"
-                    variant="cs-type2"
-                  />
-                  <Spacing lg="20" md="10" />
-                  <Button
-                    btnLink="/services/heavy-duty-highway-towing"
-                    btnText="Heavy Duty Highway Towing"
-                    variant="cs-type2"
-                  />
-                  <Spacing lg="20" md="10" />
-                  <Button
-                    btnLink="/services/breakdown-services"
-                    btnText="Breakdown Towing Services"
-                    variant="cs-type2"
-                  />
-                  <Spacing lg="20" md="10" />
-                </Div>
-                <Div className="col-lg-6">
-                  <Button
-                    btnLink="/services/heavy-duty-winching-recovery-services"
-                    btnText="Heavy Duty Winching & Recovery Services"
-                    variant="cs-type2"
-                  />
+              <Spacing lg="25" md="20" />
+            </Div>
+          </Div>
+        </Div>
 
-                  <Spacing lg="20" md="10" />
-                  <Button
-                    btnLink="/services/vehicle-recovery"
-                    btnText="Vehicle Recovery Services"
-                    variant="cs-type2"
-                  />
-                  <Spacing lg="20" md="10" />
-                  <Button
-                    btnLink="/services/recovery-services"
-                    btnText="Recovery Services"
-                    variant="cs-type2"
-                  />
-                  <Spacing lg="20" md="10" />
-                  <Button
-                    btnLink="/services/corporate-services"
-                    btnText="Corporate Services"
-                    variant="cs-type2"
-                  />
-                  <Spacing lg="20" md="10" />
+        {/* Full-width content under image */}
+        <Spacing lg="60" md="40" />
+        <Div className="container">
+            <Div className="cs-flatbed_fullwidth_content" style={{ width: "100%", padding: "50px 40px", background: "rgba(255,255,255,0.03)", borderTop: "1px solid rgba(255,255,255,0.08)", borderBottom: "1px solid rgba(255,255,255,0.08)", borderRadius: "15px" }}>
+                <Div className="row">
+                  <Div className="col-12">
+                    <Div style={{ fontSize: "18px", lineHeight: "1.8", color: "rgba(255,255,255,0.75)", textAlign: "center" }}>
+                      <SafeHtmlContent html={serviceDetails.introduction} />
+                    </Div>
+                    <Spacing lg="30" md="20" />
+                    <Div className="d-flex flex-wrap justify-content-center gap-3">
+                      <a
+                        href="tel:+1-416-299-8383"
+                        className="cs-btn cs-style1"
+                        style={{ padding: "14px 32px", fontSize: "16px", fontWeight: 600 }}
+                      >
+                        <Icon icon="material-symbols:add-call-rounded" style={{ marginRight: "8px", fontSize: "20px" }} />
+                        Call Now
+                      </a>
+                      <Link
+                        href="/contact"
+                        className="cs-btn cs-style2"
+                        style={{ padding: "14px 32px", fontSize: "16px", fontWeight: 600 }}
+                      >
+                        Get a Free Quote
+                      </Link>
+                    </Div>
+                  </Div>
                 </Div>
               </Div>
+          </Div>
+
+        {/* Features Grid */}
+        {service.features && service.features.length > 0 && (
+          <>
+            <Spacing lg="150" md="80" />
+            <Div className="container">
+              <Div className="text-center">
+                <span className="cs-accent_color cs-font_16 cs-medium" style={{ letterSpacing: "2px", textTransform: "uppercase" }}>
+                  Why Choose Us
+                </span>
+                <Spacing lg="15" md="10" />
+                <h2 className="cs-section_subtitle cs-m0" style={{ fontSize: "42px" }}>
+                  What You Get With {serviceDetails.title}
+                </h2>
+              </Div>
+              <Spacing lg="70" md="45" />
+              <Div className="row">
+                {service.features.map((feature, index) => (
+                  <Div key={index} className="col-lg-4 col-md-6">
+                    <Div
+                      className="cs-radius_15 cs-service_feature_card"
+                      style={{ minHeight: "320px", display: "flex", flexDirection: "column" }}
+                    >
+                      <Div
+                        className="cs-iconbox_icon"
+                        style={{
+                          height: "70px",
+                          width: "70px",
+                          borderRadius: "50%",
+                          background: "rgba(255,74,23,0.1)",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          margin: "0 auto 25px",
+                          color: "#FF4A17",
+                          fontSize: "32px",
+                        }}
+                      >
+                        <Icon icon={feature.icon} />
+                      </Div>
+                      <h3 className="cs-iconbox_title" style={{ fontSize: "24px", marginBottom: "15px" }}>
+                        {feature.title}
+                      </h3>
+                      <Div className="cs-iconbox_subtitle" style={{ color: "rgba(255,255,255,0.65)", lineHeight: "1.7" }}>
+                        <SafeHtmlContent html={feature.description} />
+                      </Div>
+                    </Div>
+                  </Div>
+                ))}
+              </Div>
+            </Div>
+          </>
+        )}
+
+        {/* Content Sections */}
+        <Spacing lg="150" md="80" />
+        <Div className="container">
+          <h3 className="cs-section_subtitle" style={{ fontSize: "32px", marginBottom: "25px" }}>
+            Service Details
+          </h3>
+          <Div className="cs-iconbox_subtitle" style={{ color: "rgba(255,255,255,0.75)", lineHeight: "1.8" }}>
+            <SafeHtmlContent html={serviceDetails.description} splitAt="Our Professional Towing Process" />
+          </Div>
+          {service.slug !== "car-towing" && (
+            <>
+              <Spacing lg="40" md="30" />
+              <Div className="cs-radius_15" style={{ padding: "50px", background: "linear-gradient(135deg, rgba(255,74,23,0.08) 0%, rgba(255,74,23,0.02) 100%)", border: "1px solid rgba(255,74,23,0.15)" }}>
+                <h3 className="cs-section_subtitle" style={{ fontSize: "28px", marginBottom: "20px" }}>
+                  Benefits of Our {serviceDetails.title} Service
+                </h3>
+                <Div className="cs-iconbox_subtitle" style={{ color: "rgba(255,255,255,0.75)", lineHeight: "1.8" }}>
+                  <SafeHtmlContent html={serviceDetails.benefit} />
+                </Div>
+              </Div>
+            </>
+          )}
+        </Div>
+
+        {/* Related Services */}
+        <Spacing lg="150" md="80" />
+        <Div className="container">
+          <Div className="text-center">
+            <span className="cs-accent_color cs-font_16 cs-medium" style={{ letterSpacing: "2px", textTransform: "uppercase" }}>
+              Our Services
+            </span>
+            <Spacing lg="15" md="10" />
+            <h2 className="cs-section_subtitle cs-m0" style={{ fontSize: "42px" }}>
+              Explore More Towing & Roadside Services
+            </h2>
+          </Div>
+          <Spacing lg="70" md="45" />
+          <Div className="row">
+            {servicesData
+              .filter((s) => s.slug !== service.slug)
+              .slice(0, 6)
+              .map((s) => (
+                <Div key={s.slug} className="col-lg-4 col-md-6" style={{ marginBottom: "20px" }}>
+                  <Link
+                    href={`/services/${s.slug}/`}
+                    className="cs-related_service_link cs-recent_post_title cs-white_color"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      minHeight: "100px",
+                      padding: "20px 24px",
+                      border: "1px solid rgba(255,255,255,0.08)",
+                      borderRadius: "12px",
+                      background: "rgba(255,255,255,0.03)",
+                      fontSize: "15px",
+                      fontWeight: "600",
+                      lineHeight: "1.5",
+                      textDecoration: "none",
+                      transition: "all 0.3s ease",
+                    }}
+                  >
+                    {s.title}
+                  </Link>
+                </Div>
+              ))}
+          </Div>
+        </Div>
+        <Spacing lg="150" md="80" />
+        <Div className="container">
+          <Div className="row justify-content-center">
+            <Div className="col-lg-10">
+              <ServiceFaq serviceSlug={service.slug} serviceTitle={serviceDetails.title} />
             </Div>
           </Div>
         </Div>
         <Spacing lg="150" md="80" />
         <TestimonialSlider />
-        <Spacing lg="145" md="80" />
-        <Div className="container">
-          <ServiceFaq
-            serviceSlug={service.slug}
-            serviceTitle={serviceDetails.title}
-          />
-        </Div>
         <Spacing lg="150" md="80" />
         <Div className="container">
           <Cta

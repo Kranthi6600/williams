@@ -574,13 +574,67 @@ export default function Home() {
               </Div>
             </Div>
             <Spacing lg="50" md="40" />
-            <h3 className="text-center" style={{ fontSize: "28px", fontWeight: "700", marginBottom: "24px", color: "#fff" }}>
-              Fast 24/7 Emergency Towing Services
-            </h3>
-            <p className="cs-iconbox_subtitle text-center" style={{ fontSize: "15px", lineHeight: "1.8em", maxWidth: "900px", margin: "0 auto" }}>
-              Vehicle breakdowns and accidents can happen anytime. That's why Williams Towing offers 24 hour towing Toronto services around the clock. Whether you're dealing with a mechanical failure, collision, or roadside emergency, our team delivers immediate support and safe vehicle transportation. As your trusted towing company close to me, we provide reliable Towing Services in Scarborough throughout the GTA.<br /><br />
-              If you're searching for who offers emergency towing near me or the best emergency towing company Toronto, Williams Towing is ready to respond quickly with professional assistance. Our emergency towing services include accident recovery, vehicle recovery, roadside rescue, and stranded vehicle assistance across Scarborough and Toronto. When you need a tow truck near me, our fleet is always nearby.
-            </p>
+            <Div style={{ maxWidth: "1000px", margin: "0 auto" }}>
+              <Div
+                style={{
+                  position: "relative",
+                  padding: "40px 50px",
+                  borderRadius: "18px",
+                  background: "linear-gradient(135deg, rgba(255,74,23,0.06) 0%, rgba(255,255,255,0.02) 100%)",
+                  border: "1px solid rgba(255,255,255,0.06)",
+                  overflow: "hidden",
+                }}
+              >
+                <Div
+                  style={{
+                    position: "absolute",
+                    top: "0",
+                    left: "0",
+                    right: "0",
+                    height: "3px",
+                    background: "linear-gradient(90deg, #FF4A17, rgba(255,74,23,0.2))",
+                  }}
+                />
+                <Div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "12px",
+                    marginBottom: "20px",
+                  }}
+                >
+                  <Div
+                    style={{
+                      width: "48px",
+                      height: "48px",
+                      borderRadius: "50%",
+                      background: "rgba(255,74,23,0.15)",
+                      border: "2px solid rgba(255,74,23,0.3)",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      color: "#FF4A17",
+                      fontSize: "22px",
+                      fontWeight: "700",
+                      flexShrink: "0",
+                    }}
+                  >
+                    &#9888;
+                  </Div>
+                  <h3 style={{ fontSize: "26px", fontWeight: "700", color: "#fff", margin: "0" }}>
+                    Fast 24/7 Emergency Towing Services
+                  </h3>
+                </Div>
+                <p
+                  className="cs-iconbox_subtitle text-center"
+                  style={{ fontSize: "15px", lineHeight: "1.8em", color: "rgba(255,255,255,0.75)", margin: "0" }}
+                >
+                  Vehicle breakdowns and accidents can happen anytime. That's why Williams Towing offers 24 hour towing Toronto services around the clock. Whether you're dealing with a mechanical failure, collision, or roadside emergency, our team delivers immediate support and safe vehicle transportation. As your trusted towing company close to me, we provide reliable Towing Services in Scarborough throughout the GTA.<br /><br />
+                  If you're searching for who offers emergency towing near me or the best emergency towing company Toronto, Williams Towing is ready to respond quickly with professional assistance. Our emergency towing services include accident recovery, vehicle recovery, roadside rescue, and stranded vehicle assistance across Scarborough and Toronto. When you need a tow truck near me, our fleet is always nearby.
+                </p>
+              </Div>
+            </Div>
           </Div>
         </Div>
         {/* End Service Section */}

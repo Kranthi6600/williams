@@ -34,6 +34,41 @@
   color: rgba(255, 255, 255, 0.85);
 }
 
+/* Service detail page feature cards hover */
+.cs-service_feature_card {
+  padding: 45px 30px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+  border-radius: 15px;
+  text-align: center;
+  &:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 74, 23, 0.25);
+    transform: translateY(-6px);
+  }
+}
+
+/* Related service links hover */
+.cs-related_service_link {
+  padding: 20px 24px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+  &:hover {
+    background: rgba(255, 74, 23, 0.1);
+    border-color: rgba(255, 74, 23, 0.3);
+    color: #fff;
+  }
+}
+
 .cs-menu_widget.cs-style2 {
   display: flex;
   flex-wrap: wrap;
