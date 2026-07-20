@@ -17,18 +17,20 @@ export default function Hero({
   const [backgroundStyle, setBackgroundStyle] = useState({});
 
   useEffect(() => {
-    // This function dynamically sets the background image style
     const updateBackground = () => {
+      const isMobile = window.innerWidth <= 991;
+      const gradient = isMobile
+        ? "linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.3) 100%)"
+        : "linear-gradient(to right, rgba(0,0,0,0.7) 40%, transparent 100%)";
       const newStyle = {
-        backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.7) 40%, transparent 100%), url(${bgImageUrl})`,
+        backgroundImage: `${gradient}, url(${bgImageUrl})`,
       };
       setBackgroundStyle(newStyle);
     };
 
     updateBackground();
-    // Optional: Adjust the background when the window is resized
-    // window.addEventListener('resize', updateBackground);
-    // return () => window.removeEventListener('resize', updateBackground);
+    window.addEventListener("resize", updateBackground);
+    return () => window.removeEventListener("resize", updateBackground);
   }, [bgImageUrl]);
 
   return (

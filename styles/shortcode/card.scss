@@ -62,3 +62,132 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 991px) {
+  .cs-card.cs-style1 .cs-card_title {
+    font-size: 20px;
+  }
+  .cs-card.cs-style1 .cs-card_info {
+    padding: 30px 20px 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .cs-card.cs-style1 .cs-card_title {
+    font-size: 18px;
+  }
+  .cs-card.cs-style1 .cs-card_info {
+    padding: 24px 16px 0;
+  }
+  .cs-card.cs-style1 {
+    border-radius: 12px;
+    img {
+      border-radius: 12px;
+    }
+  }
+}
+
+/* Emergency Banner */
+.cs-emergency-banner {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 50px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(255,74,23,0.06) 0%, rgba(255,255,255,0.02) 100%);
+  border: 1px solid rgba(255,255,255,0.06);
+  overflow: hidden;
+}
+
+.cs-emergency-banner_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #FF4A17, rgba(255,74,23,0.2));
+}
+
+.cs-emergency-banner_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.cs-emergency-banner_icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255,74,23,0.15);
+  border: 2px solid rgba(255,74,23,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FF4A17;
+  font-size: 22px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.cs-emergency-banner_title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.cs-emergency-banner_text {
+  font-size: 15px;
+  line-height: 1.8em;
+  color: rgba(255,255,255,0.75);
+  margin: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+  .cs-emergency-banner {
+    padding: 30px 30px;
+  }
+  .cs-emergency-banner_title {
+    font-size: 22px;
+  }
+  .cs-emergency-banner_icon {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .cs-emergency-banner {
+    padding: 24px 20px;
+    border-radius: 14px;
+  }
+  .cs-emergency-banner_header {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .cs-emergency-banner_title {
+    font-size: 20px;
+    text-align: center;
+  }
+  .cs-emergency-banner_text {
+    font-size: 13px;
+    line-height: 1.7em;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .cs-emergency-banner {
+    padding: 20px 16px;
+  }
+  .cs-emergency-banner_title {
+    font-size: 18px;
+  }
+  .cs-emergency-banner_text {
+    font-size: 12px;
+  }
+}

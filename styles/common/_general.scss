@@ -109,6 +109,10 @@
   font-size: 38px;
 }
 
+.cs-font_40 {
+  font-size: 40px;
+}
+
 .cs-font_42 {
   font-size: 42px;
 }
@@ -536,6 +540,9 @@ label {
   transition: all 0.3s ease;
   @media (max-width: 991px) {
     font-size: 18px;
+  }
+  @media (max-width: 575px) {
+    font-size: 16px;
   }
 }
 .cs-accordian_body {
@@ -1473,6 +1480,9 @@ label {
   .cs-font_50 {
     font-size: 42px;
   }
+  .cs-font_40 {
+    font-size: 36px;
+  }
   .cs-shape_wrap_4 .cs-shape_4:nth-child(2) {
     height: 200px;
     width: 200px;
@@ -1521,6 +1531,9 @@ label {
   }
   .cs-font_50 {
     font-size: 36px;
+  }
+  .cs-font_40 {
+    font-size: 30px;
   }
   .cs-font_38 {
     font-size: 32px;
@@ -1615,6 +1628,30 @@ label {
   .cs-partner_logo {
     padding: 5px;
   }
+  .cs-font_50 {
+    font-size: 26px;
+  }
+  .cs-font_40 {
+    font-size: 24px;
+  }
+  .cs-font_38 {
+    font-size: 24px;
+  }
+  .cs-section_heading.cs-style1 {
+    .cs-section_title {
+      font-size: 26px;
+    }
+    .cs-section_subtitle {
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+  }
+  .cs-faq_nav {
+    padding: 24px 20px;
+    .cs-faq_nav_title {
+      font-size: 22px;
+    }
+  }
   .cs-image_layer.cs-style1 {
     padding-right: 40px;
     padding-bottom: 40px;
@@ -1647,6 +1684,26 @@ label {
   .cs-masonry_4_col {
     column-count: 1;
   }
+  .cs-font_50 {
+    font-size: 22px;
+  }
+  .cs-font_40 {
+    font-size: 20px;
+  }
+  .cs-font_38 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .cs-section_heading.cs-style1 {
+    .cs-section_title {
+      font-size: 22px;
+    }
+    .cs-section_subtitle {
+      font-size: 13px;
+    }
+  }
 }
 
 #cursor-dot,
@@ -1667,6 +1724,57 @@ label {
   width: 40px;
   height: 40px;
   border: 1px solid $accent;
+}
+
+/* Hide cost section on mobile */
+@media screen and (max-width: 991px) {
+  .cs-cost-section,
+  .cs-emergency-flatbed-section {
+    display: none !important;
+  }
+}
+
+/* Service areas section - mobile responsive */
+@media screen and (max-width: 991px) {
+  .cs-service-areas-flex {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+  .cs-service-areas-flex > div:last-child {
+    flex: 0 0 auto !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .cs-service-areas-flex > div:first-child {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .cs-service-areas-grid {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+  .cs-service-areas-grid > div {
+    padding: 10px 14px !important;
+  }
+  .cs-service-areas-grid > div span:last-child {
+    font-size: 12px !important;
+  }
+  .cs-service-areas-flex {
+    gap: 16px !important;
+    margin-top: 20px !important;
+    margin-bottom: 16px !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .cs-service-areas-grid > div {
+    padding: 8px 12px !important;
+  }
+  .cs-service-areas-grid > div span:last-child {
+    font-size: 11px !important;
+  }
 }
 
 #cursor-dot-outline {

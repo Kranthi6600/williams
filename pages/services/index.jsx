@@ -277,7 +277,7 @@ export default function Service() {
                   <Div key={area.slug} className="col-6" style={{ marginBottom: "12px" }}>
                     <Link
                       href={`/towing/${area.slug}/`}
-                      style={{ color: "inherit", textDecoration: "underline", fontSize: "14px" }}
+                      className="cs-towing-area-link"
                     >
                       Towing in {area.city}
                     </Link>
@@ -336,8 +336,7 @@ export default function Service() {
               <Div key={service.slug} className="col-lg-4 col-md-6" style={{ marginBottom: "14px" }}>
                 <Link
                   href={`/services/${service.slug}/`}
-                  className="cs-btn cs-style2 w-100 d-block text-center"
-                  style={{ padding: "12px 16px", fontSize: "14px" }}
+                  className="cs-btn cs-style2 w-100 d-block text-center cs-service-list-btn"
                 >
                   {service.title}
                 </Link>

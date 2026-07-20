@@ -144,3 +144,9 @@
       margin-bottom: 40px;
   }
 }
+@media screen and (max-width: 575px) {
+  .cs-sidebar_widget_title {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+}

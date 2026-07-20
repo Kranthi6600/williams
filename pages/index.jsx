@@ -48,8 +48,8 @@ function FaqPagination() {
       >
         {visible.map((item, i) => (
           <Div key={start + i} style={{ marginBottom: "18px" }}>
-            <p style={{ color: "#FFD700", fontWeight: "bold", fontSize: "14px", marginBottom: "4px" }}>{item.q}</p>
-            <p style={{ color: "#ccc", fontSize: "13px", margin: 0 }}>{item.a}</p>
+            <p className="cs-faq-item-q">{item.q}</p>
+            <p className="cs-faq-item-a">{item.a}</p>
           </Div>
         ))}
       </Div>
@@ -76,6 +76,10 @@ function FaqPagination() {
 export default function Home() {
   // Hero Social Links
   const heroSocialLinks = [
+    {
+      name: "Facebook",
+      links: "https://www.facebook.com/share/18ttMaam2c/",
+    },
     {
       name: "Youtube",
       links: "https://www.youtube.com/channel/UCdC7lmnJNh8U6KHXHscxvkw",
@@ -526,7 +530,7 @@ export default function Home() {
                   btnText="Explore All Services"
                   btnLink="/services"
                 />
-                <Spacing lg="90" md="45" />
+                <Spacing lg="90" md="30" />
               </Div>
               <Div className="col-xl-8">
                 <Div className="row">
@@ -538,7 +542,7 @@ export default function Home() {
                       src="/images/service_1.jpg"
                       alt="Accident recovery towing — Williams Towing Toronto"
                     />
-                    <Spacing lg="0" md="30" />
+                    <Spacing lg="0" md="25" />
                   </Div>
                   <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
                   <Div className="col-lg-3 col-sm-6">
@@ -548,7 +552,7 @@ export default function Home() {
                       src="/images/wt (7).jpg"
                       alt="Roadside assistance near me — Williams Towing GTA"
                     />
-                    <Spacing lg="0" md="30" />
+                    <Spacing lg="0" md="25" />
                   </Div>
                   <Div className="col-lg-3 col-sm-6">
                     <Card
@@ -557,7 +561,7 @@ export default function Home() {
                       src="/images/1.jpg"
                       alt="Heavy duty towing Toronto — semi truck and commercial vehicle towing"
                     />
-                    <Spacing lg="0" md="30" />
+                    <Spacing lg="0" md="25" />
                   </Div>
                   <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
                   <Div className="col-lg-3 col-sm-6">
@@ -567,73 +571,25 @@ export default function Home() {
                       src="/images/5.jpg"
                       alt="Heavy equipment transport and moving — Williams Towing GTA"
                     />
-                    <Spacing lg="0" md="30" />
+                    <Spacing lg="0" md="25" />
                   </Div>
                   <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
                 </Div>
               </Div>
             </Div>
-            <Spacing lg="50" md="40" />
-            <Div style={{ maxWidth: "1000px", margin: "0 auto" }}>
-              <Div
-                style={{
-                  position: "relative",
-                  padding: "40px 50px",
-                  borderRadius: "18px",
-                  background: "linear-gradient(135deg, rgba(255,74,23,0.06) 0%, rgba(255,255,255,0.02) 100%)",
-                  border: "1px solid rgba(255,255,255,0.06)",
-                  overflow: "hidden",
-                }}
-              >
-                <Div
-                  style={{
-                    position: "absolute",
-                    top: "0",
-                    left: "0",
-                    right: "0",
-                    height: "3px",
-                    background: "linear-gradient(90deg, #FF4A17, rgba(255,74,23,0.2))",
-                  }}
-                />
-                <Div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "12px",
-                    marginBottom: "20px",
-                  }}
-                >
-                  <Div
-                    style={{
-                      width: "48px",
-                      height: "48px",
-                      borderRadius: "50%",
-                      background: "rgba(255,74,23,0.15)",
-                      border: "2px solid rgba(255,74,23,0.3)",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      color: "#FF4A17",
-                      fontSize: "22px",
-                      fontWeight: "700",
-                      flexShrink: "0",
-                    }}
-                  >
-                    &#9888;
-                  </Div>
-                  <h3 style={{ fontSize: "26px", fontWeight: "700", color: "#fff", margin: "0" }}>
-                    Fast 24/7 Emergency Towing Services
-                  </h3>
-                </Div>
-                <p
-                  className="cs-iconbox_subtitle text-center"
-                  style={{ fontSize: "15px", lineHeight: "1.8em", color: "rgba(255,255,255,0.75)", margin: "0" }}
-                >
-                  Vehicle breakdowns and accidents can happen anytime. That's why Williams Towing offers 24 hour towing Toronto services around the clock. Whether you're dealing with a mechanical failure, collision, or roadside emergency, our team delivers immediate support and safe vehicle transportation. As your trusted towing company close to me, we provide reliable Towing Services in Scarborough throughout the GTA.<br /><br />
-                  If you're searching for who offers emergency towing near me or the best emergency towing company Toronto, Williams Towing is ready to respond quickly with professional assistance. Our emergency towing services include accident recovery, vehicle recovery, roadside rescue, and stranded vehicle assistance across Scarborough and Toronto. When you need a tow truck near me, our fleet is always nearby.
-                </p>
+            <Spacing lg="50" md="30" />
+            <Div className="cs-emergency-banner">
+              <Div className="cs-emergency-banner_top" />
+              <Div className="cs-emergency-banner_header">
+                <Div className="cs-emergency-banner_icon">&#9888;</Div>
+                <h3 className="cs-emergency-banner_title">
+                  Fast 24/7 Emergency Towing Services
+                </h3>
               </Div>
+              <p className="cs-emergency-banner_text">
+                Vehicle breakdowns and accidents can happen anytime. That's why Williams Towing offers 24 hour towing Toronto services around the clock. Whether you're dealing with a mechanical failure, collision, or roadside emergency, our team delivers immediate support and safe vehicle transportation. As your trusted towing company close to me, we provide reliable Towing Services in Scarborough throughout the GTA.<br /><br />
+                If you're searching for who offers emergency towing near me or the best emergency towing company Toronto, Williams Towing is ready to respond quickly with professional assistance. Our emergency towing services include accident recovery, vehicle recovery, roadside rescue, and stranded vehicle assistance across Scarborough and Toronto. When you need a tow truck near me, our fleet is always nearby.
+              </p>
             </Div>
           </Div>
         </Div>
@@ -702,7 +658,7 @@ export default function Home() {
             bgUrl="/images/9.JPG"
           />
           <Spacing lg="50" md="40" />
-          <p className="cs-m0 text-center" style={{ maxWidth: "900px", margin: "0 auto", fontSize: "18px", lineHeight: "1.8em" }}>
+          <p className="cs-m0 text-center cs-paragraph-lg">
             Our commitment to customer satisfaction has made us a preferred choice for Scarborough towing, Toronto towing, Markham towing, Pickering towing, Ajax towing, Whitby towing, Oshawa towing, North York towing and Etobicoke towing.
           </p>
         </Div>
@@ -792,8 +748,8 @@ export default function Home() {
                     textDecoration: "none",
                   }}
                 >
-                  <strong style={{ display: "block", fontSize: "16px", marginBottom: "6px" }}>{area.label}</strong>
-                  <span style={{ fontSize: "13px", color: "#888" }}>24/7 Emergency Towing in {area.city}</span>
+                  <strong className="cs-area-link-label">{area.label}</strong>
+                  <span className="cs-area-link-sub">24/7 Emergency Towing in {area.city}</span>
                 </Link>
               </Div>
             ))}
@@ -829,7 +785,7 @@ export default function Home() {
                   padding: "35px",
                 }}
               >
-                <h3 style={{ color: "#fff", marginBottom: "20px", fontSize: "20px" }}>Frequently Asked Questions</h3>
+                <h3 className="cs-faq-box-title">Frequently Asked Questions</h3>
                 <FaqPagination />
               </Div>
             </Div>
@@ -860,7 +816,7 @@ export default function Home() {
             <Div className="cs-cta_in">
               <h2 className="cs-cta_title cs-semi_bold cs-m0">Call Williams Towing Today</h2>
               <Spacing lg="30" md="20" />
-              <p style={{ maxWidth: "800px", margin: "0 auto", fontSize: "18px", lineHeight: "1.8em" }}>
+              <p className="cs-paragraph-lg" style={{ maxWidth: "800px", margin: "0 auto" }}>
                 Need a tow truck service near me or immediate roadside assistance? Contact Williams Towing today for fast, affordable, and professional towing services throughout Scarborough, Toronto, and the GTA. Our dispatch team is standing by 24/7 to provide the help you need when you need it most.
               </p>
               <Spacing lg="40" md="30" />

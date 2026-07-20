@@ -191,7 +191,7 @@ export default function ServiceDetails({ service, serviceDetails }) {
               },
               "sameAs": [
                 "https://www.instagram.com/williams_towing/",
-                "https://m.facebook.com/williamstows/"
+                "https://www.facebook.com/share/18ttMaam2c/"
               ]
             })
           }}
@@ -287,7 +287,7 @@ export default function ServiceDetails({ service, serviceDetails }) {
                 Professional Towing Services
               </span>
               <Spacing lg="15" md="10" />
-              <h2 className="cs-section_subtitle cs-m0" style={{ fontSize: "42px", lineHeight: "1.2" }}>
+              <h2 className="cs-section_subtitle cs-m0 cs-service-detail-title">
                 {serviceDetails.title}
               </h2>
               <Spacing lg="25" md="20" />
@@ -301,23 +301,21 @@ export default function ServiceDetails({ service, serviceDetails }) {
             <Div className="cs-flatbed_fullwidth_content" style={{ width: "100%", padding: "50px 40px", background: "rgba(255,255,255,0.03)", borderTop: "1px solid rgba(255,255,255,0.08)", borderBottom: "1px solid rgba(255,255,255,0.08)", borderRadius: "15px" }}>
                 <Div className="row">
                   <Div className="col-12">
-                    <Div style={{ fontSize: "18px", lineHeight: "1.8", color: "rgba(255,255,255,0.75)", textAlign: "center" }}>
+                    <Div className="cs-service-intro-text">
                       <SafeHtmlContent html={serviceDetails.introduction} />
                     </Div>
                     <Spacing lg="30" md="20" />
                     <Div className="d-flex flex-wrap justify-content-center gap-3">
                       <a
                         href="tel:+1-416-299-8383"
-                        className="cs-btn cs-style1"
-                        style={{ padding: "14px 32px", fontSize: "16px", fontWeight: 600 }}
+                        className="cs-btn cs-style1 cs-service-cta-btn"
                       >
-                        <Icon icon="material-symbols:add-call-rounded" style={{ marginRight: "8px", fontSize: "20px" }} />
+                        <Icon icon="material-symbols:add-call-rounded" className="cs-service-cta-icon" />
                         Call Now
                       </a>
                       <Link
                         href="/contact"
-                        className="cs-btn cs-style2"
-                        style={{ padding: "14px 32px", fontSize: "16px", fontWeight: 600 }}
+                        className="cs-btn cs-style2 cs-service-cta-btn"
                       >
                         Get a Free Quote
                       </Link>
@@ -337,7 +335,7 @@ export default function ServiceDetails({ service, serviceDetails }) {
                   Why Choose Us
                 </span>
                 <Spacing lg="15" md="10" />
-                <h2 className="cs-section_subtitle cs-m0" style={{ fontSize: "42px" }}>
+                <h2 className="cs-section_subtitle cs-m0 cs-service-detail-title">
                   What You Get With {serviceDetails.title}
                 </h2>
               </Div>
@@ -350,7 +348,7 @@ export default function ServiceDetails({ service, serviceDetails }) {
                       style={{ minHeight: "320px", display: "flex", flexDirection: "column" }}
                     >
                       <Div
-                        className="cs-iconbox_icon"
+                        className="cs-iconbox_icon cs-feature-icon"
                         style={{
                           height: "70px",
                           width: "70px",
@@ -361,12 +359,11 @@ export default function ServiceDetails({ service, serviceDetails }) {
                           justifyContent: "center",
                           margin: "0 auto 25px",
                           color: "#FF4A17",
-                          fontSize: "32px",
                         }}
                       >
                         <Icon icon={feature.icon} />
                       </Div>
-                      <h3 className="cs-iconbox_title" style={{ fontSize: "24px", marginBottom: "15px" }}>
+                      <h3 className="cs-iconbox_title cs-feature-card-title">
                         {feature.title}
                       </h3>
                       <Div className="cs-iconbox_subtitle" style={{ color: "rgba(255,255,255,0.65)", lineHeight: "1.7" }}>
@@ -383,7 +380,7 @@ export default function ServiceDetails({ service, serviceDetails }) {
         {/* Content Sections */}
         <Spacing lg="150" md="80" />
         <Div className="container">
-          <h3 className="cs-section_subtitle" style={{ fontSize: "32px", marginBottom: "25px" }}>
+          <h3 className="cs-section_subtitle cs-service-details-heading">
             Service Details
           </h3>
           <Div className="cs-iconbox_subtitle" style={{ color: "rgba(255,255,255,0.75)", lineHeight: "1.8" }}>
@@ -392,8 +389,8 @@ export default function ServiceDetails({ service, serviceDetails }) {
           {service.slug !== "car-towing" && (
             <>
               <Spacing lg="40" md="30" />
-              <Div className="cs-radius_15" style={{ padding: "50px", background: "linear-gradient(135deg, rgba(255,74,23,0.08) 0%, rgba(255,74,23,0.02) 100%)", border: "1px solid rgba(255,74,23,0.15)" }}>
-                <h3 className="cs-section_subtitle" style={{ fontSize: "28px", marginBottom: "20px" }}>
+              <Div className="cs-radius_15 cs-benefits-box" style={{ background: "linear-gradient(135deg, rgba(255,74,23,0.08) 0%, rgba(255,74,23,0.02) 100%)", border: "1px solid rgba(255,74,23,0.15)" }}>
+                <h3 className="cs-section_subtitle cs-benefits-heading">
                   Benefits of Our {serviceDetails.title} Service
                 </h3>
                 <Div className="cs-iconbox_subtitle" style={{ color: "rgba(255,255,255,0.75)", lineHeight: "1.8" }}>
@@ -412,7 +409,7 @@ export default function ServiceDetails({ service, serviceDetails }) {
               Our Services
             </span>
             <Spacing lg="15" md="10" />
-            <h2 className="cs-section_subtitle cs-m0" style={{ fontSize: "42px" }}>
+            <h2 className="cs-section_subtitle cs-m0 cs-service-detail-title">
               Explore More Towing & Roadside Services
             </h2>
           </Div>

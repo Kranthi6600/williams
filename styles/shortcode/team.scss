@@ -75,3 +75,11 @@
     font-size: 20px;
   }
 }
+@media screen and (max-width: 575px) {
+  .cs-team.cs-style1 .cs-member_name {
+    font-size: 18px;
+  }
+  .cs-team.cs-style1 .cs-member_info {
+    padding: 20px 16px;
+  }
+}

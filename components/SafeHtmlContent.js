@@ -989,6 +989,7 @@ const SafeHtmlContent = ({ html, imageFloat, splitAt }) => {
 
             // Create cost section wrapper with two divs
             const costWrapper = document.createElement("div");
+            costWrapper.className = "cs-cost-section";
             costWrapper.style.display = "flex";
             costWrapper.style.gap = "30px";
             costWrapper.style.marginTop = "40px";
@@ -1546,6 +1547,7 @@ const SafeHtmlContent = ({ html, imageFloat, splitAt }) => {
 
               // Create combined wrapper with border
               const combinedWrapper = document.createElement("div");
+              combinedWrapper.className = "cs-emergency-flatbed-section";
               combinedWrapper.style.display = "flex";
               combinedWrapper.style.gap = "30px";
               combinedWrapper.style.marginTop = "40px";
@@ -1714,6 +1716,7 @@ const SafeHtmlContent = ({ html, imageFloat, splitAt }) => {
 
                       // Create parent div with two child divs
                       const parentDiv = document.createElement("div");
+                      parentDiv.className = "cs-service-areas-flex";
                       parentDiv.style.display = "flex";
                       parentDiv.style.gap = "30px";
                       parentDiv.style.marginTop = "30px";
@@ -1731,6 +1734,7 @@ const SafeHtmlContent = ({ html, imageFloat, splitAt }) => {
 
                       // Service areas - styled grid with location icons
                       const areasGrid = document.createElement("div");
+                      areasGrid.className = "cs-service-areas-grid";
                       areasGrid.style.display = "grid";
                       areasGrid.style.gridTemplateColumns = "repeat(2, 1fr)";
                       areasGrid.style.gap = "12px";
@@ -1815,6 +1819,7 @@ const SafeHtmlContent = ({ html, imageFloat, splitAt }) => {
                     } else {
                       // No image available - fallback to original areas grid
                       const areasGrid = document.createElement("div");
+                      areasGrid.className = "cs-service-areas-grid";
                       areasGrid.style.display = "grid";
                       areasGrid.style.gridTemplateColumns = "repeat(auto-fill, minmax(200px, 1fr))";
                       areasGrid.style.gap = "16px";
@@ -5082,6 +5087,7 @@ const SafeHtmlContent = ({ html, imageFloat, splitAt }) => {
                   if (listText.includes("scarborough") && listText.includes("oshawa")) {
                     // Service areas grid
                     areasGrid = document.createElement("div");
+                    areasGrid.className = "cs-service-areas-grid";
                     areasGrid.style.display = "grid";
                     areasGrid.style.gridTemplateColumns = "repeat(2, 1fr)";
                     areasGrid.style.gap = "12px";
@@ -5734,6 +5740,7 @@ const SafeHtmlContent = ({ html, imageFloat, splitAt }) => {
             if (node.tagName === "UL" || node.tagName === "OL") {
               const items = node.querySelectorAll("li");
               const areasGrid = document.createElement("div");
+              areasGrid.className = "cs-service-areas-grid";
               areasGrid.style.display = "grid";
               areasGrid.style.gridTemplateColumns = "repeat(2, 1fr)";
               areasGrid.style.gap = "12px";

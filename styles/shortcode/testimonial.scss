@@ -49,7 +49,19 @@
     padding-left: 20px;
     padding-top: 60px;
   }
+  .cs-testimonial.cs-style1 .cs-testimonial_text {
+    font-size: 18px;
+  }
   .cs-testimonial.cs-style1 .cs-testimonial_avatar_name {
+    font-size: 18px;
     margin-top: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .cs-testimonial.cs-style1 .cs-testimonial_text {
+    font-size: 16px;
+  }
+  .cs-testimonial.cs-style1 .cs-testimonial_avatar_name {
+    font-size: 16px;
   }
 }

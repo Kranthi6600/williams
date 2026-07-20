@@ -150,12 +150,7 @@ export default function GoogleAdsLanding() {
                   <span style={{ color: "#FFD700" }}>24 Hour Towing Service</span>
                 </h1>
                 
-                <p style={{ 
-                  color: "#fff", 
-                  fontSize: "18px",
-                  marginBottom: "30px",
-                  lineHeight: "1.5"
-                }}>
+                <p className="cs-scarborough-hero-text">
                   Need immediate help? Williams Towing provides fast, reliable 24/7 emergency towing service in Scarborough. 
                   Professional tow truck operators ready to assist you right now.
                 </p>
@@ -204,7 +199,7 @@ export default function GoogleAdsLanding() {
                   borderRadius: "10px",
                   backdropFilter: "blur(10px)"
                 }}>
-                  <p style={{ color: "#fff", margin: "0", fontSize: "16px" }}>
+                  <p className="cs-scarborough-info-text">
                     📍 <strong>Service Location:</strong> {address}<br/>
                     ⏰ <strong>Available:</strong> 24/7 Emergency Service<br/>
                     🚗 <strong>Response Time:</strong> Under 30 minutes
@@ -223,7 +218,7 @@ export default function GoogleAdsLanding() {
               <h2 className="cs-font_40 cs-m0" style={{ color: "#333", marginBottom: "15px" }}>
                 🚨 Emergency Towing Services Available Now
               </h2>
-              <p style={{ fontSize: "18px", color: "#666" }}>
+              <p className="cs-scarborough-section-sub">
                 Professional towing services for all situations - 24/7 availability
               </p>
             </Div>
@@ -256,7 +251,7 @@ export default function GoogleAdsLanding() {
                       e.currentTarget.style.boxShadow = "0 5px 20px rgba(0,0,0,0.1)";
                     }}
                   >
-                    <Div style={{ fontSize: "48px", marginBottom: "15px" }}>
+                    <Div className="cs-scarborough-service-icon">
                       {service.icon}
                     </Div>
                     {service.urgent && (
@@ -276,7 +271,7 @@ export default function GoogleAdsLanding() {
                     <h4 style={{ color: "#333", margin: "15px 0 10px" }}>
                       {service.title}
                     </h4>
-                    <p style={{ color: "#666", fontSize: "14px", margin: "0" }}>
+                    <p className="cs-scarborough-service-desc">
                       {service.description}
                     </p>
                   </Div>
@@ -293,7 +288,7 @@ export default function GoogleAdsLanding() {
               <h2 className="cs-font_40 cs-m0" style={{ color: "#fff", marginBottom: "15px" }}>
                 📍 Service Areas - Quick Response
               </h2>
-              <p style={{ fontSize: "18px", color: "#666" }}>
+              <p className="cs-scarborough-section-sub">
                 We serve all areas across Scarborough and surrounding regions
               </p>
             </Div>
@@ -342,13 +337,7 @@ export default function GoogleAdsLanding() {
             }}>
               Need Immediate Towing Service?
             </h2>
-            <p style={{ 
-              color: "#ccc", 
-              fontSize: "18px",
-              marginBottom: "30px",
-              maxWidth: "600px",
-              margin: "0 auto 30px"
-            }}>
+            <p className="cs-scarborough-cta-text">
               Don't wait! Call Williams Towing now for fast, professional emergency towing service in Scarborough. 
               We're available 24/7 to help you get back on the road.
             </p>

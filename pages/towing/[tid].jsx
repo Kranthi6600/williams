@@ -155,7 +155,7 @@ const TowingService = ({ areaItem }) => {
                 ],
               },
               "sameAs": [
-                "https://www.facebook.com/williamstows/",
+                "https://www.facebook.com/share/18ttMaam2c/",
                 "https://www.instagram.com/williams_towing/",
                 "https://www.youtube.com/channel/UCdC7lmnJNh8U6KHXHscxvkw",
               ],
@@ -268,11 +268,10 @@ const TowingService = ({ areaItem }) => {
               <Div key={i} className="col-lg-4 col-sm-6" style={{ marginBottom: "16px" }}>
                 <Link
                   href={`/services/${service.slug}/`}
-                  className="w-100 d-block text-center"
+                  className="w-100 d-block text-center cs-towing-service-link"
                   aria-label={`${service.name} in ${city}`}
                   style={{
                     padding: "24px 16px",
-                    fontSize: "14px",
                     fontWeight: 600,
                     color: "#FEFEFE",
                     background: "#181818",

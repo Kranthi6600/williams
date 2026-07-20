@@ -178,31 +178,113 @@
   }
   .cs-funfact_wrap .cs-funfact_left {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   .cs-funfact_wrap_2 .cs-funfacts {
     display: grid;
     grid-gap: 10px 25px;
   }
+  .cs-funfact_wrap.cs-type1 {
+    margin-top: -80px;
+  }
+  .cs-funfact_heading h2 {
+    font-size: 36px;
+  }
 }
 @media screen and (max-width: 991px) {
   .cs-funfact_wrap .cs-funfact_left {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+  }
+  .cs-funfact_wrap.cs-type1 {
+    margin-top: -60px;
+  }
+  .cs-funfact_heading h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+  .cs-funfact_heading p {
+    font-size: 14px;
+  }
+  .cs-funfact.cs-style1 {
+    .cs-funfact_number {
+      font-size: 36px;
+    }
+    .cs-funfact_text span {
+      font-size: 16px;
+    }
+    .cs-funfact_text p {
+      font-size: 13px;
+    }
   }
 }
 @media screen and (max-width: 767px) {
   .cs-funfacts {
-    grid-gap: 15px 15px;
-    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px 16px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cs-funfact.cs-style1 {
+    flex-direction: column;
+    align-items: flex-start;
+    .cs-funfact_number {
+      font-size: 32px;
+      margin: 0 0 4px 0;
+    }
   }
 }
 @media screen and (max-width: 575px) {
   .cs-funfacts {
-    grid-gap: 15px 15px;
-    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px 12px;
+    grid-template-columns: repeat(2, 1fr);
   }
   .cs-funfact_wrap,
   .cs-funfact_wrap_2 {
-    padding: 40px 30px;
+    padding: 30px 20px;
+    border-radius: 12px;
+  }
+  .cs-funfact_wrap.cs-type1 {
+    margin-top: -40px;
+  }
+  .cs-funfact_heading h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .cs-funfact_heading p {
+    font-size: 13px;
+    line-height: 1.6em;
+  }
+  .cs-funfact.cs-style1 {
+    .cs-funfact_number {
+      font-size: 28px;
+    }
+    .cs-funfact_text span {
+      font-size: 14px;
+    }
+    .cs-funfact_text p {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .cs-funfact_wrap,
+  .cs-funfact_wrap_2 {
+    padding: 24px 16px;
+  }
+  .cs-funfact_wrap.cs-type1 {
+    margin-top: -30px;
+  }
+  .cs-funfact_heading h2 {
+    font-size: 20px;
+  }
+  .cs-funfact.cs-style1 {
+    .cs-funfact_number {
+      font-size: 24px;
+    }
+    .cs-funfact_text span {
+      font-size: 12px;
+    }
+    .cs-funfact_text p {
+      font-size: 11px;
+    }
   }
 }

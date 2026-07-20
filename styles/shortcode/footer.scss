@@ -50,6 +50,123 @@
   }
 }
 
+/* Service detail page responsive font sizes */
+.cs-service-detail-title {
+  font-size: 42px;
+  line-height: 1.2;
+}
+.cs-service-intro-text {
+  font-size: 18px;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.75);
+  text-align: center;
+}
+.cs-feature-card-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.cs-service-details-heading {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+.cs-benefits-heading {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.cs-benefits-box {
+  padding: 50px;
+}
+.cs-flatbed_fullwidth_content {
+  padding: 50px 40px;
+}
+
+@media screen and (max-width: 991px) {
+  .cs-service-detail-title {
+    font-size: 30px;
+  }
+  .cs-service-intro-text {
+    font-size: 16px;
+  }
+  .cs-feature-card-title {
+    font-size: 20px;
+  }
+  .cs-service-details-heading {
+    font-size: 26px;
+  }
+  .cs-benefits-heading {
+    font-size: 24px;
+  }
+  .cs-flatbed_fullwidth_content {
+    padding: 35px 25px;
+  }
+  .cs-service_feature_card {
+    padding: 35px 25px;
+  }
+  .cs-benefits-box {
+    padding: 35px 25px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .cs-service-detail-title {
+    font-size: 24px;
+  }
+  .cs-service-intro-text {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .cs-feature-card-title {
+    font-size: 18px;
+  }
+  .cs-service-details-heading {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+  .cs-benefits-heading {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .cs-flatbed_fullwidth_content {
+    padding: 25px 18px;
+    border-radius: 12px;
+  }
+  .cs-service_feature_card {
+    padding: 28px 20px;
+    border-radius: 12px;
+  }
+  .cs-benefits-box {
+    padding: 25px 18px;
+    border-radius: 12px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .cs-service-detail-title {
+    font-size: 20px;
+  }
+  .cs-service-intro-text {
+    font-size: 13px;
+  }
+  .cs-feature-card-title {
+    font-size: 16px;
+  }
+  .cs-service-details-heading {
+    font-size: 20px;
+  }
+  .cs-benefits-heading {
+    font-size: 18px;
+  }
+  .cs-flatbed_fullwidth_content {
+    padding: 20px 14px;
+  }
+  .cs-service_feature_card {
+    padding: 22px 16px;
+  }
+  .cs-benefits-box {
+    padding: 20px 14px;
+  }
+}
+
 /* Related service links hover */
 .cs-related_service_link {
   padding: 20px 24px;
@@ -67,6 +184,228 @@
     border-color: rgba(255, 74, 23, 0.3);
     color: #fff;
   }
+}
+
+/* Responsive font sizes for index page */
+.cs-paragraph-lg {
+  font-size: 18px;
+  line-height: 1.8em;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.cs-area-link-label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+.cs-area-link-sub {
+  font-size: 13px;
+  color: #888;
+}
+.cs-faq-box-title {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  .cs-paragraph-lg {
+    font-size: 16px;
+  }
+  .cs-faq-box-title {
+    font-size: 18px;
+  }
+  .cs-related_service_link {
+    font-size: 15px;
+    padding: 18px 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .cs-paragraph-lg {
+    font-size: 14px;
+    line-height: 1.7em;
+  }
+  .cs-area-link-label {
+    font-size: 14px;
+  }
+  .cs-area-link-sub {
+    font-size: 12px;
+  }
+  .cs-faq-box-title {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .cs-related_service_link {
+    font-size: 14px;
+    padding: 16px 18px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .cs-paragraph-lg {
+    font-size: 13px;
+  }
+  .cs-area-link-label {
+    font-size: 13px;
+  }
+  .cs-area-link-sub {
+    font-size: 11px;
+  }
+  .cs-faq-box-title {
+    font-size: 15px;
+  }
+  .cs-related_service_link {
+    font-size: 13px;
+    padding: 14px 16px;
+  }
+}
+
+/* Scarborough towing page responsive fonts */
+.cs-scarborough-hero-text {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+.cs-scarborough-info-text {
+  color: #fff;
+  margin: 0;
+  font-size: 16px;
+}
+.cs-scarborough-section-sub {
+  font-size: 18px;
+  color: #666;
+}
+.cs-scarborough-service-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+.cs-scarborough-service-desc {
+  color: #666;
+  font-size: 14px;
+  margin: 0;
+}
+.cs-scarborough-cta-text {
+  color: #ccc;
+  font-size: 18px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+@media screen and (max-width: 991px) {
+  .cs-scarborough-hero-text { font-size: 16px; }
+  .cs-scarborough-info-text { font-size: 14px; }
+  .cs-scarborough-section-sub { font-size: 16px; }
+  .cs-scarborough-service-icon { font-size: 40px; }
+  .cs-scarborough-cta-text { font-size: 16px; }
+}
+
+@media screen and (max-width: 575px) {
+  .cs-scarborough-hero-text { font-size: 14px; margin-bottom: 20px; }
+  .cs-scarborough-info-text { font-size: 13px; }
+  .cs-scarborough-section-sub { font-size: 14px; }
+  .cs-scarborough-service-icon { font-size: 36px; margin-bottom: 10px; }
+  .cs-scarborough-service-desc { font-size: 13px; }
+  .cs-scarborough-cta-text { font-size: 14px; margin-bottom: 20px; }
+}
+
+@media screen and (max-width: 375px) {
+  .cs-scarborough-hero-text { font-size: 13px; }
+  .cs-scarborough-info-text { font-size: 12px; }
+  .cs-scarborough-section-sub { font-size: 13px; }
+  .cs-scarborough-service-desc { font-size: 12px; }
+  .cs-scarborough-cta-text { font-size: 13px; }
+}
+
+/* Service CTA buttons */
+.cs-service-cta-btn {
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.cs-service-cta-icon {
+  margin-right: 8px;
+  font-size: 20px;
+}
+.cs-feature-icon {
+  font-size: 32px;
+}
+
+@media screen and (max-width: 575px) {
+  .cs-service-cta-btn {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
+  .cs-service-cta-icon {
+    font-size: 18px;
+  }
+  .cs-feature-icon {
+    font-size: 26px;
+    height: 60px !important;
+    width: 60px !important;
+    margin-bottom: 18px !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .cs-service-cta-btn {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+  .cs-service-cta-icon {
+    font-size: 16px;
+  }
+  .cs-feature-icon {
+    font-size: 22px;
+    height: 52px !important;
+    width: 52px !important;
+    margin-bottom: 15px !important;
+  }
+}
+
+/* FAQ pagination items */
+.cs-faq-item-q {
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.cs-faq-item-a {
+  color: #ccc;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* Towing service links */
+.cs-towing-service-link {
+  font-size: 14px;
+}
+.cs-towing-area-link {
+  color: inherit;
+  text-decoration: underline;
+  font-size: 14px;
+}
+.cs-service-list-btn {
+  padding: 12px 16px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 575px) {
+  .cs-faq-item-q { font-size: 13px; }
+  .cs-faq-item-a { font-size: 12px; }
+  .cs-towing-service-link { font-size: 13px; padding: 18px 14px !important; }
+  .cs-towing-area-link { font-size: 13px; }
+  .cs-service-list-btn { font-size: 13px; padding: 10px 14px !important; }
+}
+
+@media screen and (max-width: 375px) {
+  .cs-faq-item-q { font-size: 12px; }
+  .cs-faq-item-a { font-size: 11px; }
+  .cs-towing-service-link { font-size: 12px; }
+  .cs-towing-area-link { font-size: 12px; }
+  .cs-service-list-btn { font-size: 12px; padding: 8px 12px !important; }
 }
 
 .cs-menu_widget.cs-style2 {

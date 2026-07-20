@@ -76,3 +76,14 @@
     padding: 0 30px;
   }
 }
+@media screen and (max-width: 575px) {
+  .cs-pricing_table.cs-style1 {
+    .cs-pricing_title {
+      font-size: 22px;
+    }
+    .cs-pricing_price h3 {
+      font-size: 32px;
+    }
+    padding: 0 20px;
+  }
+}

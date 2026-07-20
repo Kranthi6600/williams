@@ -332,12 +332,17 @@
       height: 100%;
       width: 100%;
       max-width: calc(100% - 300px);
+      gap: 16px;
     }
     .cs-main_header_left {
       height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+    .cs-call-btn {
+      position: static;
+      flex-shrink: 0;
     }
   }
 
@@ -569,8 +574,8 @@
   .cs-nav {
     .cs-nav_list {
       position: absolute;
-      width: 100vw;
-      left: -12px;
+      width: 100%;
+      left: 0;
       background-color: #181818;
       padding: 10px 0;
       display: none;
@@ -743,7 +748,7 @@
 }
 @media screen and (max-width: 575px) {
   .cs-site-branding {
-    max-width: 150px;
+    max-width: 130px;
   }
 
   .cs-hamburger_wrap .cs-hamburger {
@@ -751,6 +756,9 @@
   }
   .cs-site_branding img {
     max-height: 32px;
+  }
+  .cs-site_header.cs-style1 .cs-main_header_in {
+    height: 64px;
   }
   .cs-site_header.cs-style1 .cs-btn {
     span {
@@ -761,6 +769,11 @@
       width: 20px;
       height: 20px;
     }
+  }
+  .cs-site_header.cs-style1 .cs-munu_toggle {
+    top: 50%;
+    right: 0;
+    margin-top: -13px;
   }
 }
 
@@ -777,10 +790,11 @@
   background-color: $accent;
   position: absolute;
   top: 25px;
-  right: -10px;
+  right: 45px;
   font-weight: 600;
   border: none;
   overflow: hidden;
+  white-space: nowrap;
   &:before {
     content: "";
     position: absolute;
@@ -813,6 +827,9 @@
   .cs-call-btn {
     padding: 8px 16px;
     font-size: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 45px;
   }
 }
 
@@ -820,8 +837,9 @@
   .cs-call-btn {
     padding: 6px 12px;
     font-size: 12px;
-    top: 25px;
-    right: 25px;
-    margin-right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+    margin-right: 0;
   }
 }

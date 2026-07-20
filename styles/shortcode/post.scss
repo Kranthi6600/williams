@@ -251,6 +251,25 @@
   .cs-slider .cs-post.cs-style1 {
     max-width: 320px;
   }
+  .cs-post.cs-style2 {
+    .cs-post_title {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    .cs-post_meta {
+      font-size: 14px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+    blockquote {
+      font-size: 14px;
+      padding: 20px 18px;
+    }
+  }
+  .cs-post.cs-style3 .cs-post_title {
+    font-size: 20px;
+  }
   .cs-post.cs-style3 {
     display: block;
     .cs-posted_by {
